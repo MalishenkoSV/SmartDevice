@@ -1,14 +1,14 @@
 body {
-  min-width: 1920px;
-
-  .reset;
-  font-family: ;
+  max-width: 1920px;
+  font-family: "PTSans", Arial, sans-serif;
   font-style: ;
   font-weight: ;
   font-size: ;
   line-height: ;
   color: ;
   background-color: ;
+  .reset;
+
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ body {
 img {
   max-width: 100%;
 }
-@media (min-width: @tablet-width) {
+@media (max-width: @tablet-width) {
   body {
     min-width: 767px;
   }
