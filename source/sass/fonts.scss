@@ -1,19 +1,29 @@
 @font-face {
-  font-family: "PT Sans";
-  src: local("PT Sans regular"),
-    url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+  font-family: "pt_monoregular", monospace;
+  src: local("PT Mono Regular");
+  src: url("../fonts/ptmono-regular-webfont.woff2") format("woff2"),
+       url("../fonts/ptmono-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans";
-  src: local("PT Sans Bold"),
-    url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
+  font-family: "roboto_condensedbold", "Arial", "Tahoma", sans-serif;
+  src: local("Open Condensed Bold");
+  src: url("fonts/robotocondensed-bold-webfont.woff2") format("woff2"),
+       url("fonts/robotocondensed-bold-webfont.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "robotomedium", "Arial", "Tahoma", sans-serif;
+  src: local("Roboto Medium");
+  src: url("fonts/roboto-medium-webfont.woff2") format("woff2"),
+       url("fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }

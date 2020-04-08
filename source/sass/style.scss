@@ -1,23 +1,28 @@
-// @import "blocks/advantages.sass";
-// @import "blocks/btn.sass";
-// @import "blocks/feedback.sass";
-// @import "blocks/form.sass";
-@import "fonts.sass";
-// @import "blocks/gallery.sass";
-// @import "blocks/hotel.sass";
-// @import "blocks/map.sass";
-// @import "blocks/main-nav.sass";
-// @import "blocks/modal.sass";
-// @import "normalize.sass";
-// @import "blocks/promotion.sass";
-@import "blocks/page-header.sass";
-// @import "blocks/page-main.sass";
+@import "normalize.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "scaffolding.scss";
+@import "blocks/page-header.scss";
+// @import "blocks/advantages.scss";
+// @import "blocks/btn.scss";
+// @import "blocks/feedback.scss";
+// @import "blocks/form.scss";
+
+// @import "blocks/gallery.scss";
+// @import "blocks/hotel.scss";
+// @import "blocks/map.scss";
+// @import "blocks/main-nav.scss";
+// @import "blocks/modal.scss";
+// @import "normalize.scss";
+// @import "blocks/promotion.scss";
+
+// @import "blocks/page-main.scss";
 // @import "blocks/page-footer";
-// @import "blocks/sedona-promotion.sass";
-// @import "scaffolding.sass";
-// @import "blocks/social.sass";
-// @import "variables.sass";
-// @import "blocks/visually-hidden.sass";
-// @import "blocks/video.sass";
-// @import "blocks/welcome.sass";
-// @import "blocks/wrapper.sass";
+// @import "blocks/sedona-promotion.scss";
+
+// @import "blocks/social.scss";
+
+// @import "blocks/visually-hidden.scss";
+// @import "blocks/video.scss";
+// @import "blocks/welcome.scss";
+// @import "blocks/wrapper.scss";

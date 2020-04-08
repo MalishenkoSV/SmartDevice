@@ -8,7 +8,9 @@ $darkgrey: #203C42;
 $grey: #788891;
 $ss-grey: #CDCDCD;
 $grey :#788891;
-
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
 
 // $bg-grey: rgba(178, 178, 178, 0.3);
 // $brown: #766357;
@@ -34,78 +36,78 @@ $grey :#788891;
 // $retina-dpi: 144dpi;
 // $retina-dppx: 1.5dppx;
 
-.reset() {
+.reset {
   margin: 0;
   padding: 0;
 }
 
-.reset-lists() {
+.reset-lists {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.reset-p() {
+.reset-p {
   margin: 0;
   padding: 0;
   text-transform: none;
 }
 
-.font-small() {
+.font-small {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
 }
 
-.font-media__bold() {
+.font-media__bold {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.font-media__regular() {
+.font-media__regular {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.font-main__regular() {
+.font-main__regular {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
 }
 
-.font-main__bold() {
+.font-main__bold {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.font-bold() {
+.font-bold {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.font-bolder() {
+.font-bolder {
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
 }
 
-.font-super() {
+.font-super {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.font-superbold() {
+.font-superbold {
   font-size: 30px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.font-superbolder() {
+.font-superbolder {
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
