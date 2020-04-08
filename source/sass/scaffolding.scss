@@ -22,9 +22,6 @@ body {
   font-style: normal;
   font-size: 17px;
 }
-// .body__svg {
-//   display: none;
-// }
 
 img {
   max-width: 100%;
@@ -33,12 +30,12 @@ img {
 
 @media (min-width: $tablet-width) {
   body {
-    min-width: 767px;
+    max-width: 768px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $mobile-width) {
   body {
-    min-width: 320px;
+    max-width: 320px;
   }
 }

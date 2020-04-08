@@ -1,24 +1,34 @@
 .page-header {
    background-color: $bg-black;
-   max-width: 1411px;
+   max-width: 74%;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .page-header__logo {
   height: 52px;
   width: 52px;
 }
+
 .page-header__icon-logo {
   width: 19px;
   height: 14px;
 }
+
 .page-header__icon-letter {
   width: 19px;
   height: 14px;
 }
+
 .page-header__icon-phone {
   width: 18px;
   height: 18px;
 }
+
+.page-header__nav {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .page-header__icon-letter {
     width: 25.33px;
