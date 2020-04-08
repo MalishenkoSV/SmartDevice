@@ -1,0 +1,86 @@
+.page-footer {
+  padding-top: 41px;
+}
+
+.page-footer__visit-sedona {
+  .font-super;
+  height: 16px;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.page-footer__copyright-icon {
+  padding-right: 10px;
+  width: 57px;
+  height: 35px;
+}
+
+.page-footer__copyright-description {
+  .reset;
+  .font-main__regular;
+  align-self: center;
+  display: flex;
+}
+
+.page-footer__copyright--html {
+  display: flex;
+  margin-left: 10px;
+  fill: @black;
+}
+
+.page-footer__copyright--html:hover {
+  fill: @bg-darkblue;
+}
+
+.page-footer__copyright--html:active {
+  fill: @black-light;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    background-color: @white;
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 36px 0 60px;
+  }
+
+  .page-footer__copyright--html {
+    margin: 0;
+  }
+
+  .page-footer__visit-sedona {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 30px 105px 0 120px;
+  }
+
+  .page-footer__visit-sedona {
+    padding-top: 10px;
+  }
+
+  .page-footer__copyright {
+    padding-top: 10px;
+  }
+
+  .page-footer__copyright--html {
+    margin: 0;
+  }
+
+  .social__list {
+    padding-left: 80px;
+  }
+
+  .social__item {
+    margin-right: 5px;
+  }
+}

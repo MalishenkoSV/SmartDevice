@@ -1,0 +1,13 @@
+
+.page-main {
+  .reset;
+  .font-main__regular;
+  text-align: center;
+  color: @darkgrey;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    .reset;
+  }
+}

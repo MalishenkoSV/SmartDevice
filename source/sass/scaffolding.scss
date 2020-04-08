@@ -1,0 +1,32 @@
+body {
+  min-width: 1920px;
+
+  .reset;
+  font-family: ;
+  font-style: ;
+  font-weight: ;
+  font-size: ;
+  line-height: ;
+  color: ;
+  background-color: ;
+  box-sizing: border-box;
+}
+
+// .body__svg {
+//   display: none;
+// }
+
+img {
+  max-width: 100%;
+}
+@media (min-width: @tablet-width) {
+  body {
+    min-width: 767px;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  body {
+    min-width: 320px;
+  }
+}
