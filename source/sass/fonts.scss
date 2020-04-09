@@ -9,8 +9,9 @@
 }
 
 @font-face {
-  font-family: "roboto_condensedbold", "Arial", "Tahoma", sans-serif;
-  src: local("Open Condensed Bold");
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
+  src: local("Roboto Condensed Bold"),
+        local("robotocondensed_bold");
   src: url("fonts/robotocondensed-bold-webfont.woff2") format("woff2"),
        url("fonts/robotocondensed-bold-webfont.woff") format("woff");
   font-weight: 700;
@@ -19,8 +20,9 @@
 }
 
 @font-face {
-  font-family: "robotomedium", "Arial", "Tahoma", sans-serif;
-  src: local("Roboto Medium");
+  font-family: "Roboto Medium", "Arial", "Tahoma", sans-serif;
+  src: local("Roboto Medium"),
+        local("robotomedium");
   src: url("fonts/roboto-medium-webfont.woff2") format("woff2"),
        url("fonts/roboto-medium-webfont.woff") format("woff");
   font-weight: 500;

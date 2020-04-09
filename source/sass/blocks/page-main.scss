@@ -1,0 +1,42 @@
+
+.page-main {
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  background-color: $bg-black;
+  position: relative;
+  padding-top: 231px;
+  padding-bottom: 278px;
+
+
+}
+.page-main__title {
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+
+}
+.page-main__text {
+    font-family: "PT Mono";
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 37px;
+}
+.page-main__btn {
+   padding: 17px 28px 14px;
+   font-family: "Roboto Condensed";
+   font-weight: bold;
+   line-height: 19px;
+   text-align: center;
+   text-transform: uppercase;
+   background-color: $bg-blue;
+}
+@media (min-width: $tablet-width) {
+
+}
