@@ -1,7 +1,9 @@
 .nav {
 
 }
-nav__burger {
+@media (max-width: $tablet-width) {
+    .nav__burger {
+      display: none;
+    }
 
 }
-

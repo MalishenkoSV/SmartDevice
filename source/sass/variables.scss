@@ -36,7 +36,7 @@ $desktop-width: 1150px;
 // $retina-dpi: 144dpi;
 // $retina-dppx: 1.5dppx;
 
-.reset {
+@mixin reset {
   margin: 0;
   padding: 0;
 }

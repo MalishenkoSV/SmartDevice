@@ -1,0 +1,19 @@
+.wrapper {
+   background-color: $bg-black;
+   max-width: 73,5%;
+}
+
+@media (max-width: $tablet-width) {
+  .wrapper {
+    margin: 0;
+    max-width: 768px;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+  .wrapper {
+    max-width: 320px;
+
+  }
+}

@@ -2,158 +2,181 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Smart Device</title>
   <link type="font/woff2" rel="preload" as="font" href="fonts/ptmono-regular-webfont.woff2">
   <link type="font/woff2" rel="preload" as="font" href="fonts/robotocondensed-bold-webfont.woff2">
   <link type="font/woff2" rel="preload" as="font" href="fonts/roboto-medium-webfont2.woff2">
   <link type="font/woff" rel="preload" href="fonts/ptmono-regular-webfont.woff">
   <link type="font/woff" rel="preload" href="fonts/robotocondensed-bold-webfont.woff">
   <link type="font/woff" rel="preload" href="fonts/roboto-medium-webfont.woff">
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <meta name="format-detection" content="telephone=no">
   <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <title>Smart Device</title>
 </head>
 <body>
     <div style="display: none;">
         <include src="build/img/sprite.svg"></include>
     </div>
-    <div class="wrapper">
-        <header class="page-header">
-            <div class="page-header__logo logo">
-                <svg class="page-header__icon"><use xlink:href="#icon-logo"></use></svg>
-            </div>
-            <button type="button" class="page-header__burger menu-btn">
-                <span></span>
-                <span></span>
-            </button>
-            <button type="button" class="page-header__toggle" aria-label="Закрытие окнa меню"><span class="visually-hidden">Открыть меню</span></button>
-            <nav class="page-header__nav nav">
-                <div class="nav__contacts">
-                    <a class="nav__mail" href="mailto:info@sd.ru">info@sd.ru</a>
-                    <a class="nav__tel" href="tel:+74950005252">+7 (495) 000 52 52</a>
-                    <a  class="nav__callback btn"  href="#" ></a>
-                    <button type="button" class="nav__burger menu-btn">
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </nav>
-        </header>
-        <main class="main">
-            <h1 class="main__title">Печатные платы</h1>
-            <p class="main__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a href="#" class="main__btn btn">Получить бесплатную консультацию</a>
-            <section class="main__promotion attribute">
-                <ul class="attribute__list">
-                    <li class="attribute__item attribute__item--terms">
-                        <h6 class="attribute__title">Оперативные сроки </h6>
-                        <p class="attribute__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-                    </li>
-                    <li class="attribute__item attribute__item--provider">
-                        <h6 class="attribute__title">Крупные поставщики</h6>
-                        <p class="attribute__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции</p>
-                    </li>
-                    <li class="attribute__item attribute__item--confidentiality">
-                        <h6 class="attribute__title">Полная конфиденциальность</h6>
-                        <p class="attribute__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-                    </li>
-                    <li class="attribute__item attribute__item--cost">
-                        <h6 class="attribute__title">Персонализация стоимости</h6>
-                        <p class="attribute__text">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
-                    </li>
-                </ul>
-            </section>
 
-            <section class="main__about about">
-                <h4 class="about__title">О компании</h4>
-                <article class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
 
-                Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</article>
-                <a href="#" class="about__btn btn">Подробнее</a>
-            </section>
-            <section class="main__offers offers">
-                <h2 class="offers__title"></h2>
-                <ul class="offers__list">
-                    <li class="offers__item">
-                        <a href="#" class="offers__link">Производство печатных плат</a>
-                    </li>
-                    <li class="offers__item">
-                        <a href="#" class="offers__link">Монтаж печатных плат</a>
-                    </li>
-                    <li class="offers__item">
-                        <a href="#" class="offers__link">Комплектующие для светотехники</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="main__feedback feedback">
-                <h4 class="feedback__title"></h4>
-                <p class="feedback__text"></p>
-                <form action="post" class="feedback__form">
-                    <input type="text" placeholder="Имя">
-                    <input type="tel" placeholder="Телефон">
-                    <textarea name="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-                    <button>Задать вопрос</button>
-                    <label for="feedback_data_process"><input type="checkbox" name="" id="feedback_data_process">Я согласен на обработку  персональных данных</label>
-                </form>
-            </section>
-        </main>
-    </div>
-
-    <div class="wrapper">
-      <footer class="footer">
-        <div class="footer__container">
-          <a class="footer__logo logo" href="#">
-            <img src="#" alt="#">
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="page-header__logo logo">
+          <a href="img/logo.jpg">
+              <img src="img/logo.png" width="202" height="52" alt="Логотип">
           </a>
-          <ul class="footer__social social">
-            <li class="social__link social__link_fb">
-              <a href="#">fb</a>
-            </li>
-            <li class="social__link social__link_ok">
-              <a href="#">ok</a>
-            </li>
-            <li class="social__link social__link_vk">
-              <a href="#">vk</a>
-            </li>
+            <!-- <figure class="page-header__figure">
+                <a href="img/logo.jpg">
+                    <picture class="page-header__picture">
+                        <source media="(min-width: 768px)" type="image/webp" srcset="img/logo@1x.webp 1x,
+                                          img/logo@2x.webp 2x">
+                        <source media="(min-width: 320px)" type="image/webp" srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x">
+                        <img class="logo__photo" src="img/logo-mobile@1x.png" width="38" height="38" alt="Логотип" srcset="img/logo-mobile@2x.png 2x">
+                    </picture>
+                </a>
+            </figure> -->
+        </div>
+        <button type="button" class="page-header__burger menu-btn" aria-label="Открытие окнa меню">
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="page-header__nav nav">
+            <div class="nav__contacts">
+                <a class="nav__mail" href="mailto:info@sd.ru">info@sd.ru</a>
+                <a class="nav__tel" href="tel:+74950005252">+7 (495) 000 52 52</a>
+                <a  class="nav__callback btn"  href="#" ></a>
+                <button type="button" class="nav__burger menu-btn">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrapper">
+          <h1 class="main__title">Печатные платы</h1>
+          <p class="main__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a href="#" class="main__btn btn">Получить бесплатную консультацию</a>
+      </div>
+      <section class="main__promotion attribute">
+        <div class="wrapper">
+          <ul class="attribute__list">
+              <li class="attribute__item attribute__item--terms">
+                  <h6 class="attribute__title">Оперативные сроки </h6>
+                  <p class="attribute__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+              </li>
+              <li class="attribute__item attribute__item--provider">
+                  <h6 class="attribute__title">Крупные поставщики</h6>
+                  <p class="attribute__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции</p>
+              </li>
+              <li class="attribute__item attribute__item--confidentiality">
+                  <h6 class="attribute__title">Полная конфиденциальность</h6>
+                  <p class="attribute__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+              </li>
+              <li class="attribute__item attribute__item--cost">
+                  <h6 class="attribute__title">Персонализация стоимости</h6>
+                  <p class="attribute__text">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+              </li>
           </ul>
         </div>
+      </section>
 
-        <div class="footer__container">
-          <h6 class="footer__title">Разделы сайта</h6>
+      <section class="main__about about">
+        <div class="wrapper">
+          <h4 class="about__title">О компании</h4>
+          <article class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+
+          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</article>
+          <a href="#" class="about__btn btn">Подробнее</a>
+        </div>
+      </section>
+      <section class="main__offers offers">
+        <div class="wrapper">
+          <h2 class="offers__title">Service Device предлагает следующие товары и услуги</h2>
+          <ul class="offers__list">
+              <li class="offers__item">
+                  <a href="#" class="offers__link">Производство печатных плат</a>
+              </li>
+              <li class="offers__item">
+                  <a href="#" class="offers__link">Монтаж печатных плат</a>
+              </li>
+              <li class="offers__item">
+                  <a href="#" class="offers__link">Комплектующие для светотехники</a>
+              </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__feedback feedback">
+        <div class="wrapper">
+          <h4 class="feedback__title">Остались вопросы? Задайте их нам!</h4>
+          <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
+          <form action="post" class="feedback__form">
+              <input type="text" placeholder="Имя">
+              <input type="tel" placeholder="Телефон">
+              <textarea name="form_question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+              <button>Задать вопрос</button>
+              <label for="feedback_data_process"><input type="checkbox" name="agree" id="feedback_data_process">Я согласен на обработку  персональных данных</label>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+      <div class="footer__container">
+        <a class="footer__logo logo" href="#">
+          <img src="#" alt="#">
+        </a>
+        <ul class="footer__social social">
+          <li class="social__link social__link_fb">
+            <a href="#">fb</a>
+          </li>
+          <li class="social__link social__link_ok">
+            <a href="#">ok</a>
+          </li>
+          <li class="social__link social__link_vk">
+            <a href="#">vk</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__container">
+        <h6 class="footer__title">Разделы сайта</h6>
+        <ul class="footer__site-map site-map">
+          <li class="site-map__element"><a href="#">О компании</a></li>
+          <li class="site-map__element"><a href="#">Продукты</a></li>
+          <li class="site-map__element"><a href="#">Производство печатных плат</a></li>
+          <li class="site-map__element"><a href="#">Монтаж печатных плат</a></li>
+          <li class="site-map__element"><a href="#">Комплектующие</a></li>
+          <li class="site-map__element"><a href="#">Доставка</a></li>
+          <li class="site-map__element"><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__container">
+          <h6 class="footer__title">Наш офис</h6>
           <ul class="footer__site-map site-map">
-            <li class="site-map__element"><a href="#">О компании</a></li>
-            <li class="site-map__element"><a href="#">Продукты</a></li>
-            <li class="site-map__element"><a href="#">Производство печатных плат</a></li>
-            <li class="site-map__element"><a href="#">Монтаж печатных плат</a></li>
-            <li class="site-map__element"><a href="#">Комплектующие</a></li>
-            <li class="site-map__element"><a href="#">Доставка</a></li>
-            <li class="site-map__element"><a href="#">Контакты</a></li>
+              <li class="site-map__element">г. Мытищи, Олимпийский проспект, д.10</li>
+              <li class="site-map__element"><a href="#">+7 (495) 589-40-50</a></li>
+              <li class="site-map__element"><a href="#">+7 (925) 003-87-67</a></li>
+              <li class="site-map__element"><a href="#">+7 (926) 926-080-79</a></li>
           </ul>
-        </div>
-
-        <div class="footer__container">
-            <h6 class="footer__title">Наш офис</h6>
-            <ul class="footer__site-map site-map">
-                <li class="site-map__element">г. Мытищи, Олимпийский проспект, д.10</li>
-                <li class="site-map__element"><a href="#">+7 (495) 589-40-50</a></li>
-                <li class="site-map__element"><a href="#">+7 (925) 003-87-67</a></li>
-                <li class="site-map__element"><a href="#">+7 (926) 926-080-79</a></li>
-            </ul>
-        </div>
-        <div class="copyrights">
-            <p class="copyrights__rights">Все права защищены</p>
-            <p class="copyrights__rights">1999-2018 SD Service Devices</p>
-            <a href="#">Условия конфиденциальности</a>
-            <a href="#">Developed by wow studio</a>
-        </div>
-      </footer>
-
-
+      </div>
     </div>
+    <div class="wrapper">
+      <div class="copyrights">
+          <p class="copyrights__rights">Все права защищены</p>
+          <p class="copyrights__rights">1999-2018 SD Service Devices</p>
+          <a href="#">Условия конфиденциальности</a>
+          <a href="#">Developed by wow studio</a>
+      </div>
+    </div>
+  </footer>
+
 
 </body>
 </html>
