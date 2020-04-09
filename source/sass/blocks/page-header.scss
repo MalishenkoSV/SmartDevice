@@ -1,12 +1,27 @@
 .page-header {
    width: 100%;
-   padding-top: 23px;
+   padding-top: 33px;
    background-color: $bg-black;
    box-sizing: border-box;
+
 }
+.page-header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.page-header__logo {
+  width: 335px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: auto;
 }
 .page-header__icon {
   width: 202px;
@@ -39,11 +54,6 @@
   .page-header {
     height: 38px;
     width: 38px;
-  }
-
-
-  .page-header__logo {
-
   }
 
 }

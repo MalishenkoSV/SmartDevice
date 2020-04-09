@@ -1,8 +1,24 @@
 .nav__contacts {
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-end;
    padding-top: 14px;
 }
+
+.nav__link {
+  padding-left: 35px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.nav__link--mail {
+  margin-right: 88px;
+}
+
+.nav__link--tel {
+  margin-right: 38px;
+  padding-left: 125px;
+}
+
 .nav__btn {
   width: 180px;
   height: 45px;
@@ -17,6 +33,7 @@
   padding: 14px 13px 8px 12px;
   color: $bg-lightgrey;
 }
+
 .nav__burger {
   display: none;
 }
