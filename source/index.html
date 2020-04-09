@@ -20,49 +20,37 @@
         <include src="build/img/sprite.svg"></include>
     </div>
 
-
+   <div class="wrapper">
     <header class="page-header">
-      <div class="wrapper">
         <div class="page-header__logo logo">
-          <a href="img/logo.jpg">
-              <img src="img/logo.png" width="202" height="52" alt="Логотип">
-          </a>
-            <!-- <figure class="page-header__figure">
-                <a href="img/logo.jpg">
-                    <picture class="page-header__picture">
-                        <source media="(min-width: 768px)" type="image/webp" srcset="img/logo@1x.webp 1x,
-                                          img/logo@2x.webp 2x">
-                        <source media="(min-width: 320px)" type="image/webp" srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x">
-                        <img class="logo__photo" src="img/logo-mobile@1x.png" width="38" height="38" alt="Логотип" srcset="img/logo-mobile@2x.png 2x">
-                    </picture>
-                </a>
-            </figure> -->
+            <svg class="page-header__icon"><use xlink:href="#icon-logo"></use></svg>
         </div>
         <button type="button" class="page-header__burger menu-btn" aria-label="Открытие окнa меню">
             <span></span>
             <span></span>
         </button>
+
         <nav class="page-header__nav nav">
             <div class="nav__contacts">
-                <a class="nav__mail" href="mailto:info@sd.ru">info@sd.ru</a>
-                <a class="nav__tel" href="tel:+74950005252">+7 (495) 000 52 52</a>
-                <a  class="nav__callback btn"  href="#" ></a>
+                <a class="nav__mail link" href="mailto:info@sd.ru">info@sd.ru</a>
+                <a class="nav__tel link" href="tel:+74950005252">+7 (495) 000 52 52</a>
+                <button type="button"  class="nav__btn btn">Заказать звонок</button>
                 <button type="button" class="nav__burger menu-btn">
                     <span></span>
                     <span></span>
                 </button>
             </div>
         </nav>
-      </div>
     </header>
+  </div>
+  <div class="wrapper">
+    <main class="pqge-main">
 
-    <main class="main">
-      <div class="wrapper">
-          <h1 class="main__title">Печатные платы</h1>
-          <p class="main__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#" class="main__btn btn">Получить бесплатную консультацию</a>
-      </div>
-      <section class="main__promotion attribute">
+          <h1 class="pqge-main__title">Печатные платы</h1>
+          <p class="pqge-main__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a href="#" class="pqge-main__btn btn">Получить бесплатную консультацию</a>
+
+      <section class="pqge-main__promotion attribute">
         <div class="wrapper">
           <ul class="attribute__list">
               <li class="attribute__item attribute__item--terms">
@@ -85,7 +73,7 @@
         </div>
       </section>
 
-      <section class="main__about about">
+      <section class="pqge-main__about about">
         <div class="wrapper">
           <h4 class="about__title">О компании</h4>
           <article class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
@@ -94,7 +82,7 @@
           <a href="#" class="about__btn btn">Подробнее</a>
         </div>
       </section>
-      <section class="main__offers offers">
+      <section class="pqge-main__offers offers">
         <div class="wrapper">
           <h2 class="offers__title">Service Device предлагает следующие товары и услуги</h2>
           <ul class="offers__list">
@@ -110,7 +98,7 @@
           </ul>
         </div>
       </section>
-      <section class="main__feedback feedback">
+      <section class="pqge-main__feedback feedback">
         <div class="wrapper">
           <h4 class="feedback__title">Остались вопросы? Задайте их нам!</h4>
           <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
@@ -124,7 +112,7 @@
         </div>
       </section>
     </main>
-
+  </div>
     <footer class="footer">
       <div class="wrapper">
       <div class="footer__container">

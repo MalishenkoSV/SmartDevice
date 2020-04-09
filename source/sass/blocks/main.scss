@@ -1,7 +1,17 @@
 
-.main {
+.page-main {
   margin: 0;
   padding: 0;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  background-color: $bg-black;
+  position: relative;
+
+}
+.page-main__title {
+  margin-top: 633px;
 }
 
 @media (min-width: $tablet-width) {

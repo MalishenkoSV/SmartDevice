@@ -1,6 +1,20 @@
-.nav {
-
+.nav__contacts {
+   display: flex;
+   justify-content: space-between;
 }
+.nav__btn {
+  width: 180px;
+  height: 45px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $bg-lightgrey;
+}
+
 @media (max-width: $tablet-width) {
     .nav__burger {
       display: none;
