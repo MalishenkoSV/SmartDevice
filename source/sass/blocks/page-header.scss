@@ -1,17 +1,18 @@
 .page-header {
-   width: 73%;
-   display: flex;
+   width: 100%;
    padding-top: 23px;
-   margin-left: auto;
-   margin-right: auto;
    background-color: $bg-black;
-   justify-content: space-between;
    box-sizing: border-box;
+}
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 .page-header__icon {
   width: 202px;
   height: 52px;
 }
+
 .page-header__picture {
   width: 100%;
   height: 52px;
