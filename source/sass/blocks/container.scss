@@ -1,0 +1,32 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+}
+
+.container::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/paper_airplane.png);
+    width: 519px;
+    height: 296px;
+    top: calc(50% - 148px);
+    left: calc(10% - 1px);
+}
+
+.feedback .container {
+    padding-left: 800px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.feedback__form {
+    display: flex;
+}
+
