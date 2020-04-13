@@ -14,6 +14,10 @@
    background-image: url("../img/maska1x.png");
    margin-bottom: 109px;
 }
+.page-main__menu {
+  display: flex;
+
+}
 
 .page-main__title {
   font-family: "Roboto Condensed";
@@ -107,6 +111,7 @@
   .page-main__title {
      max-width: 470px;
   }
+
   .page-main__text {
     font-size: 18px;
     padding-left: 50px;

@@ -1,8 +1,10 @@
 .nav__list {
    display: flex;
+   align-items: center;
    list-style: none;
    margin: 0;
    padding: 0;
+   max-width: 660px;
 }
 
 .nav__item {
@@ -11,35 +13,54 @@
 }
 
 .nav__link {
-  margin-top: 10px;
-  text-align: center;
-  display: flex;
-  flex-wrap: nowrap;
+  position: relative;
 }
 
-.nav__item--mail {
-   margin-right: 0.14%;
+.nav__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+}
 
+.nav__link--mail {
+  padding-left: 40px;
+}
+
+.nav__link--tel {
+  padding-left: 40px;
+}
+
+.nav__link--tel::before {
+  width: 19px;
+  height: 14px;
+  background-image: url("../img/icon-phone.svg");
+
+}
+.nav__link--mail::before {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon-mail.svg");
 }
 
 .nav__item--tel {
-   min-width: 220px;
-   margin-right: 0.06%;
+   margin-left: 7%;
 }
 
-.nav__icon--tel {
-  display: inline-block;
+.nav__item--btn {
+  margin-left: 40px;
+}
+
+.nav__link--tel {
    width: 17px;
    height: 17px;
-   margin-right: 16px;
    white-space: nowrap;
 }
 
-.nav__icon--mail {
-  display: inline-block;
+.nav__link--mail {
   width: 19px;
   height: 14px;
-  margin-right: 17px;
   white-space: nowrap;
 }
 
@@ -58,17 +79,44 @@
   color: $bg-lightgrey;
 }
 
+.nav__open-menu {
+   position: relative;
+}
+
+.nav__open-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 37px;
+  height: 1px;
+  background-color: $white;
+}
+
+.nav__open-menu--one::before {
+  top: 0;
+}
+
+.nav__open-menu--two::before {
+  top: 11px;
+}
+
 .nav__burger {
   display: none;
 }
 
 @media (max-width: $tablet-width) {
+  .nav__list {
+    width: 135px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
   .nav__link {
     font-size: 0;
   }
 
   .nav__burger {
     display: block;
+    padding-right: 40px;
   }
   .nav__open-menu {
     position: relative;
@@ -86,26 +134,23 @@
     display: none;
   }
 
-  .nav__icon--tel {
-     width: 24px;
-     height: 24px;
-     margin-right: 5px;
-  }
-
-  .nav__icon--mail {
+  .nav__link--mail::before {
     width: 25px;
     height: 19px;
-    margin-right: 5px;
-  }
-  .nav__item--mail {
-    margin-right: 0;
-    min-width: 25px;
+    left: 30px;
+    top: 0;
   }
 
- .nav__item--tel {
-    margin-right: 0;
-    min-width: 24px;
-    height: 24px;
+  .nav__link--tel::before {
+     width: 24px;
+     height: 24px;
+     left: 10px;
+     top: -5px;
+   }
+}
 
-  }
+@media (max-width: $mobile-width) {
+  .nav__link--tel {
+    padding-right: 40px;
+ }
 }
