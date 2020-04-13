@@ -1,10 +1,18 @@
 .page-header {
+  padding-top: 33px;
+  background-color: $bg-black;
+  position: relative;
    width: 100%;
-   padding-top: 33px;
-   background-color: $bg-black;
    box-sizing: border-box;
+   z-index: 100;
 
 }
+
+.page-header__maska {
+  width: 100%;
+  background-image: url("../img/maska1x.png");
+}
+
 .page-header__nav {
   display: flex;
   justify-content: flex-end;
@@ -30,6 +38,10 @@
   height: 52px;
 }
 
+.page-header__icon-mobile {
+  display: none;
+}
+
 .page-header__burger  {
    border: none;
 }
@@ -39,30 +51,37 @@
     display: flex;
     justify-content: space-between;
   }
-  .page-header__icon-letter {
-    width: 25.33px;
-    height: 18.67px;
-  }
-
-  .page-header__icon-phone {
-    width: 24px;
-    height: 24px;
-  }
 
   .page-header__logo {
-    max-width: 202px;
+    margin: 0;
   }
 
   .page-header__nav {
     width: 21%;
+      display: flex;
+      justify-content: space-between;
   }
-
 
 }
 
 @media (max-width: $mobile-width) {
+  .page-header {
+    min-width: 320px;
+  }
+
   .page-header__logo {
     margin-left: auto;
   }
 
+  .page-main__screen {
+    padding-left: 53px;
+  }
+  .page-header__icon {
+    display: none;
+  }
+
+  .page-header__icon-mobile {
+     width: 38px;
+     height: 38px;
+  }
 }

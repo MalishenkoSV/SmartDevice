@@ -1,15 +1,18 @@
 .page-main {
   position: absolute;
-  top:0;
-  margin: 0;
-  padding: 0;
-  background-color: $bg-black;
-  background-image: url("../img/maska1x.png");
+  top: -10px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
   position: relative;
   padding-bottom: 278px;
+  z-index: 1;
+}
+
+.page-main__maska {
+   background-color: $bg-black;
+   background-image: url("../img/maska1x.png");
+   margin-bottom: 109px;
 }
 
 .page-main__title {
@@ -20,7 +23,6 @@
   text-transform: uppercase;
   margin-bottom: 31px;
   max-width: 718px;
-  // height: 94px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -97,11 +99,33 @@
   line-height: 16px;
   text-decoration: none;
   color: $white;
+  opacity: 0.5;
 }
 
 
-@media (min-width: $tablet-width) {
-  .page-main {
+@media (max-width: $tablet-width) {
+  .page-main__title {
+     max-width: 470px;
+  }
+  .page-main__text {
+    font-size: 18px;
+    padding-left: 50px;
+    width: 54%;
+  }
+  .page-main__text::before {
+    width: 33px;
+    height: 2px;
+    top: 15px;
+    left: 0;
+}
 
+  .page-main__maska {
+    margin-bottom: 54px;
+  }
+
+}
+@media (max-width: $mobile-width) {
+  .page-main__maska {
+    margin-bottom: 37px;
   }
 }

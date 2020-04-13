@@ -11,6 +11,21 @@ $grey :#788891;
 $mobile-width: 767px;
 $tablet-width: 1023px;
 
+@mixin font-basic {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin font-condensed {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+}
 // $bg-grey: rgba(178, 178, 178, 0.3);
 // $brown: #766357;
 // $darkbrown: #604e43;
@@ -35,79 +50,3 @@ $tablet-width: 1023px;
 // $retina-dpi: 144dpi;
 // $retina-dppx: 1.5dppx;
 
-@mixin reset {
-  margin: 0;
-  padding: 0;
-}
-
-.reset-lists {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.reset-p {
-  margin: 0;
-  padding: 0;
-  text-transform: none;
-}
-
-.font-small {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.font-media__bold {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.font-media__regular {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.font-main__regular {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.font-main__bold {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 26px;
-}
-
-.font-bold {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-}
-
-.font-bolder {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 40px;
-}
-
-.font-super {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-}
-
-.font-superbold {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 26px;
-}
-
-.font-superbolder {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 40px;
-}

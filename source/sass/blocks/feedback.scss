@@ -1,3 +1,41 @@
 .feedback {
-    background-color: #00B2FF;
+  background-color: $bg-blue;
+  padding-top: 95px;
+  padding-bottom: 113px;
+  line-height: 12px;
+
+}
+
+.feedback__title {
+  font-family:"Roboto Condensed";
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.feedback__text {
+  color: #ffffff;
+  margin-bottom: 50px;
+  line-height: 16px;
+}
+
+@media (max-width: 1023px) {
+  .feedback {
+    padding: 0;
+  }
+
+  .feedback__title {
+    font-weight: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feedback__title {
+    font-weight: 28px;
+  }
+
+  .feedback__text {
+    margin-bottom: 30px;
+  }
 }

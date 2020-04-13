@@ -5,23 +5,23 @@
 
 .form__text {
     background-color: rgba(255, 255, 255,  0.1);
-    // border: none;
-    color: #ffffff;
-    // width: 45%;
+    border: none;
+    color: $white;
+    width: 45%;
     margin-bottom: 40px;
     display: flex;
     align-items: stretch;
     padding: 15px;
 }
 .form__text::placeholder {
-    color: #ffffff;
+    color: $white;
 }
 
-// .form__text_name {
+.form__text_name {
 
-// }
+}
 
-// .form__text_tel {}
+.form__text_tel {}
 
 .form__text_textarea {
   width: 100%;
@@ -35,37 +35,52 @@
   margin-bottom: 40px;
   padding: 15px 79px;
   background-color: inherit;
-  border: 1px solid #ffffff;
+  border: 1px solid $white;
   border-radius: 3px;
 }
 
-
-.form__data-process input {
+.form__chkbx {
   display: none;
 }
 
 .form__data-process {
   position: relative;
+  line-height: 20px;
   width: 53%;
   padding-left: 35px;
   font-size: 14px;
-  color: #ffffff;
+  color: $white;
 }
 
 .form__data-process::before {
   position: absolute;
   content: "";
-  top: 10px;
+  top: 0;
   left: 0;
   width: 16px;
   height: 16px;
-  border: 1px solid #ffffff;
+  border: 1px solid $white;
 }
 
-.form__data-process:active::before {
-  background-color: #333;
+.form__chkbx:checked + .form__data-process::after  {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background: url(../img/chbox.svg) no-repeat;
 }
 
-input:checked + .form__data-process::before  {
-  background-color: #333;
+@media (max-width: 1023px) {
+
+}
+@media (max-width: 767px) {
+  .form__text {
+    width: 100%;
+  }
+
+  .form__data-process {
+    width: auto;
+  }
 }

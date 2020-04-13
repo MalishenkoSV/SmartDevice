@@ -1,19 +1,12 @@
 body {
   width: 100%;
-  line-height: 1.5;
   letter-spacing: 0.01em;
   box-sizing: border-box;
-  margin: 0;
   background-color: #ffffff;
-  font-family: "Roboto", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
   color: $ss-grey;
   background-color: $white;
   box-sizing: border-box;
-  position: relative;
+
 }
 
 html {
@@ -31,10 +24,15 @@ img {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+          outline-color: $bg-blue;
 }
+
 * {
+  @include font-basic;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+
 }
 
 @media (max-width: $tablet-width) {
