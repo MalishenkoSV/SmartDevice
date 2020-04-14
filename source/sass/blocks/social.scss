@@ -1,0 +1,15 @@
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 112px;
+}
+
+.social__icon {
+  width: 27px;
+  height: 27px;
+}
+
+.social__link {
+  text-decoration: none;
+}

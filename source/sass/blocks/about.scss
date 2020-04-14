@@ -1,0 +1,39 @@
+.about__title {
+  margin-bottom: 15px;
+  @include font-condensed-min;
+  color: $middlegrey;
+
+}
+.about__company {
+  margin-bottom: 30px;
+  color: $middlegrey;
+
+}
+
+.about__btn {
+  @include font-condensed-btn;
+  color: $bg-blue;
+  border: $bg-blue 1px solid;
+  padding: 14px 50px 14px 50px;
+}
+
+.about__wrapper {
+  max-width: 984px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.about__description {
+  margin-bottom: 20px;
+}
+
+@media (max-width: $tablet-width) {
+
+}
+@media (max-width: $tablet-width) {
+  .about__wrapper {
+    max-width: 532px;
+    padding-left: 180px;
+  }
+}

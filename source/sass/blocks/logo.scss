@@ -1,0 +1,33 @@
+.logo {
+  position: relative;
+  width: 335px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-bottom: 53px;
+}
+.logo__icon {
+  width: 202px;
+  height: 52px;
+}
+
+.logo__icon-mobile {
+  display: none;
+}
+
+
+@media (max-width: $tablet-width) {
+  .logo {
+    margin: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .logo {
+    max-width: 151px;
+  }
+
+  .logo__icon {
+    display: none;
+  }
+}

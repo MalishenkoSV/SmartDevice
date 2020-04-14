@@ -1,0 +1,15 @@
+.footer__title {
+  @include font-condensed-title;
+
+}
+
+.footer__logo::before {
+  content: "";
+  position: absolute;
+  left: 50px;;
+  width: 148px;
+  height: 30px;
+  background-image: url("../img/icon-service.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}

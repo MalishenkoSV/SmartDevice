@@ -1,4 +1,4 @@
-.wrapper--dark {
+.wrapper--block {
    width: 74%;
    margin-left: auto;
    margin-right: auto;
@@ -14,18 +14,23 @@
     margin: 0 auto;
   }
 
-  .wrapper--dark {
+  .wrapper--block {
     width: 100%;
   }
 }
 
 @media (max-width: $mobile-width) {
   .wrapper {
-    max-width: 69%;
+    max-width: 96%;
     margin: 0 auto;
 
   }
-  .wrapper--dark {
+  .wrapper--block {
     margin: 0 30px;
+  }
+}
+@media (max-width: $mobile-width) {
+  .wrapper--block {
+    margin: 0 20px;
   }
 }
