@@ -1,0 +1,20 @@
+.site-menu__list {
+  max-width: 436px;
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.site-menu__item {
+  list-style: none;
+  margin-right: 65px;
+}
+
+.site-menu__link {
+  text-decoration: none;
+  color: $ftgrey;
+  opacity: 0.5;
+}

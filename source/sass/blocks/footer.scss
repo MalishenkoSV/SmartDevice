@@ -1,13 +1,16 @@
 .footer__title {
   @include font-condensed-title;
-
+  text-transform: uppercase;
+  align-items: center;
+  color: $ftgrey;
+  margin-bottom: 29px;
 }
 
 .footer__logo::before {
   content: "";
   position: absolute;
   left: 50px;;
-  width: 148px;
+  width: 205px;
   height: 30px;
   background-image: url("../img/icon-service.svg");
   background-position: 10px 10px;

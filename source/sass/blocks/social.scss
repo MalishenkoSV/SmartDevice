@@ -1,4 +1,5 @@
 .social__list {
+  position: absolute;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -8,8 +9,21 @@
 .social__icon {
   width: 27px;
   height: 27px;
+
 }
 
 .social__link {
+  display: inline-block;
   text-decoration: none;
+
+}
+.social__icon--ok {
+  fill: $ss-grey;
+}
+
+@media (max-width: $tablet-width) {
+  .social__list {
+    max-width: 112px;
+    top: -100px;
+  }
 }

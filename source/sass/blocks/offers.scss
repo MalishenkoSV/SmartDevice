@@ -1,0 +1,168 @@
+.offers {
+    width: 100%;
+    background-color: #1B2D37;
+}
+
+.offers__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  position: relative;
+}
+
+.offers__title {
+    padding-top: 90px;
+    padding-bottom: 60px;
+    @include font-condensed-min;
+}
+
+.offers__list {
+  padding-bottom: 125px;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.offers__item {
+  width: 32%;
+  padding: 0;
+}
+
+.offers__link {
+  width: 100%;
+  height: 620px;
+  padding: 55px 150px 0 35px;
+  display: flex;
+  position: relative;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.offers__link:before {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: ">";
+  width: 63px;
+  height: 63px;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  background-color: #00B2FF;
+  z-index: 2;
+}
+
+
+.offers__link {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
+.offers__link--boards {
+  background-image: url("../img/services_desktop_board@1x.png");
+}
+
+.offers__link--mount {
+  background-image: url("../img/services_desktop_mount@1x.png");
+  background-position: -296px -36px;
+}
+.offers__link--led {
+  background-image: url("../img/services_desktop_led@1x.png");
+  background-position: -126px 0;
+}
+
+.offers__img {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 620px;
+  height: 371px;
+  opacity: 0.1;
+  background-size: cover;
+  background-position: 20px 1px;
+}
+
+@media only screen and ( min-resolution: 124.8dpi ),
+       only screen and ( min-resolution: 1.3dppx ) {
+
+  .offers__link--boards {
+    background-image: url("../img/services_desktop_board@2x.webp");
+  }
+
+  .offers__link--mount {
+    background-image: url("../img/services_desktop_mount@2x.webp");
+    background-position: -592px -72px;
+  }
+  .offers__link--led {
+    background-image: url("../img/services_desktop_led@2x.webp");
+    background-position: -252px 0;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+
+  .offers__title {
+    font-size: 32px;
+    padding: 45px 0;
+  }
+
+  .offers__item {
+    width: 100%;
+    padding-bottom: 45px;
+  }
+
+  .offers__list {
+    flex-direction: column;
+  }
+
+  .offers__link {
+    height: 256px;
+    padding-right: 200px;
+  }
+
+  .offers__link--boards {
+    background-position: -22px 0;
+  }
+
+  .offers__link--mount {
+    background-position: -296px -36px;
+  }
+
+  .offers__link--led {
+    background-position: -126px 0px;
+  }
+
+  .offers__img {
+    display: inline;
+    position: absolute;
+  }
+
+
+  @media only screen and ( min-resolution: 124.8dpi ),
+  only screen and ( min-resolution: 1.3dppx ) {
+
+  .offers__link--boards {
+    background-image: url("../img/services_desktop_mount@2x.webp");
+    background-position: -22px 0;
+  }
+
+  .offers__link--mount {
+    background-image: url("../img/services_desktop_mount@2x.webp");
+    background-position: -296px -36px;
+  }
+  .offers__link--led {
+    background-image: url("../img/services_desktop_led@2x.webp");
+    background-position: -126px 0;
+
+  }
+}
+}

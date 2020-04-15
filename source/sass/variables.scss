@@ -8,10 +8,26 @@ $darkgrey: #203C42;
 $grey: #788891;
 $ss-grey: #CDCDCD;
 $grey :#788891;
+$ftgrey: #1B2D37;
 $mobile-width: 767px;
 $tablet-width: 1023px;
 
 
+@mixin font-supermin {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@mixin font-superbasic {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+}
 @mixin font-basic {
   font-family: "PT Mono";
   font-style: normal;
@@ -120,4 +136,10 @@ $tablet-width: 1023px;
 
 }
 
+@mixin font-condensed-supermax {
+  font-family: "Roboto Condensed";
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1.15;
+}
 

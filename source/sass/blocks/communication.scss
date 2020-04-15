@@ -2,6 +2,32 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 67px;
 }
 
+.communication__wripper {
+  width: 74%;
+  margin: 0 auto;
+}
 
+.communication__item {
+  position: relative;
+}
+
+.site-contacts__link {
+  min-width: 333px;
+  @include font-superbasic;
+}
+
+@media (max-width: $tablet-width) {
+  .communication__wripper {
+     width: 91%;
+  }
+
+  .communication__item--logo {
+     padding-right: 504px;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+  }
+
+}

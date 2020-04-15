@@ -17,13 +17,7 @@
     color: $white;
 }
 
-.form__text_name {
-
-}
-
-.form__text_tel {}
-
-.form__text_textarea {
+.form__text-textarea {
   width: 100%;
 }
 
@@ -72,10 +66,7 @@
   background: url(../img/chbox.svg) no-repeat;
 }
 
-@media (max-width: 1023px) {
-
-}
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
   .form__text {
     width: 100%;
   }

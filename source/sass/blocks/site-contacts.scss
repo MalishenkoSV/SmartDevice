@@ -1,0 +1,15 @@
+.site-contacs__list {
+  display: flex;
+
+
+}
+
+.site-contacts__item {
+  list-style: none;
+}
+
+.site-contacts__link {
+  text-decoration: none;
+  color: $ftgrey;
+  opacity: 0.5;
+}
