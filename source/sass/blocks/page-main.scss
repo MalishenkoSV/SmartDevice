@@ -9,11 +9,12 @@
   z-index: 1;
 }
 
-.page-main__maska {
-   background-color: $bg-black;
-   background-image: url("../img/maska1x.png");
-   margin-bottom: 179px;
+.page-main__color {
+  background-color: $bg-black;
+  width: 100%;
+  z-index: 2;
 }
+
 .page-main__menu {
   display: flex;
 }
@@ -55,6 +56,8 @@
 
 .page-main__wrapper {
   position: relative;
+  background-color: $bg-black;
+  margin-bottom: 179px;
 }
 
 .page-main__text {

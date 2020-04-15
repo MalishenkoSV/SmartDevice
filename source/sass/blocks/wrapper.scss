@@ -9,28 +9,15 @@
 }
 
 @media (max-width: $tablet-width) {
-  .wrapper {
-    max-width: 96%;
-    margin: 0 auto;
-  }
 
   .wrapper--block {
-    width: 100%;
+    width: 93%;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .wrapper {
-    max-width: 96%;
-    margin: 0 auto;
-
-  }
   .wrapper--block {
-    margin: 0 30px;
-  }
-}
-@media (max-width: $mobile-width) {
-  .wrapper--block {
-    margin: 0 20px;
+    width: 91%;
   }
 }

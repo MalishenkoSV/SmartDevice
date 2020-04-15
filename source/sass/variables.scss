@@ -11,6 +11,31 @@ $grey :#788891;
 $mobile-width: 767px;
 $tablet-width: 1023px;
 
+
+@mixin font-basic {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin font-min {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin font-medium {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+}
+
 @mixin font-condensed-btn {
   font-family: "Roboto Condensed";
   font-style: normal;
@@ -36,30 +61,6 @@ $tablet-width: 1023px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-}
-
-@mixin font-basic {
-  font-family: "PT Mono";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-@mixin font-min {
-  font-family: "PT Mono";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-@mixin font-medium {
-  font-family: "PT Mono";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 34px;
 }
 
 @mixin font-condensed {

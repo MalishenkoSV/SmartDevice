@@ -1,5 +1,5 @@
 .page-header {
-  padding-top: 33px;
+  padding-top: 35px;
   background-color: $bg-black;
   position: relative;
   width: 100%;
@@ -7,7 +7,6 @@
   z-index: 100;
 
 }
-
 
 .page-header__logo {
   display: inline-block;
@@ -22,20 +21,11 @@
   right: 0;
 }
 
-.page-header__maska {
-  width: 100%;
-  background-image: url("../img/maska1x.png");
-}
+
 
 .page-header__menu {
   display: flex;
   align-items: flex-start;
-}
-
-.page-header__nav {
-  display: flex;
-  justify-content: flex-end;
-  max-width: 640px;
 }
 
 .page-header__wrapper {
@@ -52,17 +42,15 @@
 @media (max-width: $tablet-width) {
   .page-header {
     display: flex;
-    justify-content: space-between;
   }
-
-  .page-header__nav {
-    width: 157px;
-    justify-content: space-between;
-  }
-
 }
 
 @media (max-width: $mobile-width) {
+
+  .page-header__logo {
+    min-width: 40px;
+  }
+
   .page-main__screen {
     padding-left: 53px;
   }
