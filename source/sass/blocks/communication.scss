@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 67px;
+  position: relative;
 }
 
 .communication__wripper {
@@ -30,9 +31,9 @@
   }
 
   .communication__item--logo {
-     max-width: 100%;
-     margin-top: 19px;
-     margin-bottom: 26px;
+     width: 100%;
+     padding-top: 19px;
+     padding-bottom: 26px;
   }
 
   .communication__item--logo::before {
@@ -40,7 +41,7 @@
     content: "";
     height: 1px;
     width: 100%;
-    top: 97px;
+    top: 77px;
     left: 0;
     background-color: $ss-grey;
     opacity: 0.2;

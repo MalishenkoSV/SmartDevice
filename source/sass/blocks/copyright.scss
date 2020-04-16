@@ -43,7 +43,7 @@
   position: relative;
 }
 
-.copyrights__info--SD::before {
+.copyrights__info--SD {
   position: absolute;
   content: "";
   top: 14px;
@@ -55,9 +55,11 @@
       display: none;
   }
 
-  .copyrights__info--SD::before {
-    top: -20px;
-    right: -50px;
+
+
+  .copyrights__info--SD {
+    top: -345px;
+    left: 320px;
   }
 
 }

@@ -29,17 +29,19 @@
 .about__wrapper::before {
   content: "2005";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 90px;
+  left: -18px;
   height: 120px;
   width: auto;
-  // background-color: $white;
-  // opacity: 0.1;
-  @include font-condensed-supermax;
+  font-family: "Roboto Condensed";
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1.15;
+  -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
-  background-image: url("../img/digiboard@1x.png");
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+  background: url("../img/digiboard@1x.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and ( min-resolution: 124.8dpi ),

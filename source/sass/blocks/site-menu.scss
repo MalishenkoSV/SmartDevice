@@ -1,10 +1,7 @@
 .site-menu__list {
   max-width: 436px;
-  max-height: 100px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  flex-direction: row;
 
 }
 
@@ -17,4 +14,14 @@
   text-decoration: none;
   color: $ftgrey;
   opacity: 0.5;
+  padding-right: 65px;
+}
+
+@media (max-width: $tablet-width) {
+  .site-menu__list {
+
+    flex-direction: column;
+  }
+
+
 }
