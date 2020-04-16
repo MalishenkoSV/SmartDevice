@@ -1364,6 +1364,9 @@ input[type="radio"].visually-hidden {
   .form__data-process {
     width: auto; } }
 
+.footer {
+  background-color: #FAFAFA; }
+
 .footer__title {
   font-family: "Roboto Condensed";
   font-style: normal;
@@ -1395,8 +1398,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 67px;
-  background-color: #FAFAFA; }
+  margin-bottom: 67px; }
 
 .communication__wripper {
   width: 74%;
