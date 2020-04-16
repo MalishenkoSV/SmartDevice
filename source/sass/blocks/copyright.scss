@@ -15,6 +15,7 @@
 }
 
 .copyrights__list {
+  min-width: 112px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -22,7 +23,8 @@
 
 .copyright__item {
   list-style: none;
-  margin-right: 65px;
+  margin-right: 60px;
+  padding: 15px 0;
 }
 
 .copyrights__link {
@@ -46,8 +48,8 @@
 .copyrights__info--SD {
   position: absolute;
   content: "";
-  top: 14px;
-  left: 24px;
+  top: -15px;
+  left: 250px;
 }
 
   @media (max-width: $tablet-width) {

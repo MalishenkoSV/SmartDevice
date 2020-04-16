@@ -1516,6 +1516,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.2; }
 
 .copyrights__list {
+  min-width: 112px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1526,7 +1527,8 @@ input[type="radio"].visually-hidden {
 
 .copyright__item {
   list-style: none;
-  margin-right: 65px; }
+  margin-right: 60px;
+  padding: 15px 0; }
 
 .copyrights__link {
   text-decoration: none; }
@@ -1549,8 +1551,8 @@ input[type="radio"].visually-hidden {
 .copyrights__info--SD {
   position: absolute;
   content: "";
-  top: 14px;
-  left: 24px; }
+  top: -15px;
+  left: 250px; }
 
 @media (max-width: 1023px) {
   .copyrights__info--right {
