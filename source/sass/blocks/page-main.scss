@@ -5,12 +5,13 @@
   margin-right: auto;
   box-sizing: border-box;
   position: relative;
-  padding-bottom: 278px;
+
   z-index: 1;
 }
 
 .page-main__color {
   background-color: $bg-black;
+  background-image: url("../img/maska1x.png");
   width: 100%;
   z-index: 2;
 }

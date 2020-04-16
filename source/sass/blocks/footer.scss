@@ -1,3 +1,6 @@
+.footer {
+  background-color: $white-grey;
+}
 .footer__title {
   @include font-condensed-title;
   text-transform: uppercase;

@@ -1,15 +1,1 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
-
-pageHeader.classList.remove('page-header--nojs');
-
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+"use strict";var pageHeader=document.querySelector(".page-header"),overlay=document.querySelector(".overlay"),button=pageHeader.querySelector(".nav__btn"),popup=document.querySelector(".popup"),name=popup.querySelector("[name=name-user]"),phone=popup.querySelector("[name=phone]"),form=popup.querySelector(".form"),question=popup.querySelector("[name=question]"),close=popup.querySelector(".popup__btn-close"),isStorageSupport=!0,storage="";try{storage=localStorage.getItem("name")}catch(e){isStorageSupport=!1}button.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("popup__show"),overlay.classList.add("pop-up-overlay"),storage?(name.value=storage,phone.focus()):name.focus()}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("popup__show"),popup.classList.remove("popup__error"),overlay.classList.remove("pop-up-overlay")}),overlay.addEventListener("click",function(){popup.classList.remove("popup__show"),popup.classList.remove("popup__error"),overlay.classList.remove("pop-up-overlay")}),form.addEventListener("submit",function(e){name.value&&phone.value&&question?isStorageSupport&&localStorage.setItem("name",name.value):(e.preventDefault(),popup.classList.remove("popup__error"),popup.offsetWidth=popup.offsetWidth,popup.classList.add("popup-error"))}),pageHeader.classList.remove("page-header--nojs"),document.addEventListener("keydown",function(e){27===e.keyCode&&(e.preventDefault(),popup.classList.contains("popup-show")&&(popup.classList.remove("popup-show"),popup.classList.remove("popup-error"),overlay.classList.remove("pop-up-overlay")))});

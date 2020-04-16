@@ -1,0 +1,97 @@
+.popup {
+  position: fixed;
+  max-width: 490px;
+  background-color: #00b2ff;
+  height: auto;
+  padding: 25px;
+  top: calc(50% - 240px);
+  left: calc(50% - 240px);
+  z-index: 200;
+  transform: translateY(-1000px);
+  transition: .3s;
+}
+
+.popup__show {
+  display: block;
+  animation: bounce 0.6s;
+  transform: translateY(0);
+}
+
+.popup__title {
+  @include font-condensed-min;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.popup__text {
+  @include font-basic;
+  color: #ffffff;
+  margin-bottom: 50px;
+  line-height: 16px;
+  max-width: 100%;
+}
+
+.popup__form {
+  display: flex;
+}
+
+.popup__form {
+  display: flex;
+}
+
+.popup__form .form__text {
+  width: 100%;
+}
+
+.popup__btn-close {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 0;
+  background-color: transparent;
+  align-self: flex-end;
+}
+
+.popup__btn-close::before,
+.popup__btn-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background-color: $white;
+}
+
+.popup__btn-close::before {
+  transform: rotate(45deg);
+}
+
+.popup__btn-close::after {
+  transform: rotate(-45deg);
+}
+
+.popup .form__btn {
+  width: 100%;
+}
+.popup .form__data-process {
+  width: 100%;
+}
+
+.pop-up-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(92, 110, 100, 0.5);
+  z-index: 100;
+  filter: blur(10px);
+}
+
+.modal__error {
+   animation-name: shake;
+   animation-duration:  0.6s;
+}

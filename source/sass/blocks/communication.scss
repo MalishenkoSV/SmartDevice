@@ -24,10 +24,26 @@
      width: 91%;
   }
 
-  .communication__item--logo {
-     padding-right: 504px;
-     justify-content: flex-start;
-     flex-wrap: wrap;
+  .communication__list {
+    flex-wrap: wrap;
+
   }
+
+  .communication__item--logo {
+     max-width: 100%;
+     margin-top: 19px;
+     margin-bottom: 26px;
+  }
+
+  .communication__item--logo::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    top: 97px;
+    left: 0;
+    background-color: $ss-grey;
+    opacity: 0.2;
+ }
 
 }
