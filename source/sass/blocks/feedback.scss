@@ -28,27 +28,28 @@
   margin-bottom: 50px;
   line-height: 16px;
 }
+
 .feedback__container::before {
-  position: absolute;
   content: "";
-  background-image: url(../img/paper_airplane_3d_model@1x.png);
+  position: absolute;
+  background-image: url("../img/paper_airplane_3d_model@1x.png");
   background-repeat: no-repeat;
   width: 519px;
   height: 296px;
   top: calc(50% - 148px);
   left: -15px;
 
-  @media only screen and ( min-resolution: 124.8dpi ),
-    only screen and ( min-resolution: 1.3dppx ) {
-    background-image: url(../img/paper_airplane_3d_model@1x.png);
+  @media only screen and (min-resolution: 124.8dpi),
+    only screen and (min-resolution: 1.3dppx) {
+    background-image: url("../img/paper_airplane_3d_model@1x.png");
   }
 }
 
 .feedback__form {
   display: flex;
-  }
+}
 
-  @media (max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .feedback {
     padding: 0;
     margin-bottom: 0;
@@ -57,7 +58,6 @@
   .feedback__title {
     font-weight: 32px;
   }
-
 
   .feedback__container {
     padding: 80px 100px;

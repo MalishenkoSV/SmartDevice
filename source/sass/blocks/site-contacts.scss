@@ -1,7 +1,5 @@
 .site-contacs__list {
   display: flex;
-
-
 }
 
 .site-contacts__item {
@@ -10,6 +8,6 @@
 
 .site-contacts__link {
   text-decoration: none;
-  color: $ftgrey;
+  color: $bg-black;
   opacity: 0.5;
 }

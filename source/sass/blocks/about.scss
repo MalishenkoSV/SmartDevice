@@ -1,13 +1,12 @@
 .about__title {
-  margin-bottom: 15px;
   @include font-condensed-min;
   color: $middlegrey;
-
+  margin-bottom: 15px;
 }
+
 .about__company {
   margin-bottom: 30px;
   color: $middlegrey;
-
 }
 
 .about__btn {
@@ -24,28 +23,24 @@
   padding-bottom: 110px;
   margin-right: auto;
   margin-left: auto;
-
 }
+
 .about__wrapper::before {
+  @include font-condensed-supermax;
   content: "2005";
   position: absolute;
   top: 90px;
   left: -18px;
   height: 120px;
   width: auto;
-  font-family: "Roboto Condensed";
-  font-size: 120px;
-  font-weight: 700;
-  line-height: 1.15;
-  -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
   background: url("../img/digiboard@1x.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-@media only screen and ( min-resolution: 124.8dpi ),
-        only screen and ( min-resolution: 1.3dppx ) {
+@media only screen and (min-resolution: 124.8dpi),
+  only screen and (min-resolution: 1.3dppx) {
   .about__wrapper::before {
     background: url("../img/digiboard@2x.png");
   }
@@ -62,6 +57,7 @@
     padding-bottom: 80px;
   }
 }
+
 @media (max-width: $mobile-width) {
   .about__wrapper {
     max-width: 532px;

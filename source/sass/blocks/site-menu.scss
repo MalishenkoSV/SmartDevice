@@ -2,7 +2,6 @@
   max-width: 436px;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .site-menu__item {
@@ -12,16 +11,13 @@
 
 .site-menu__link {
   text-decoration: none;
-  color: $ftgrey;
+  color: $bg-black;
   opacity: 0.5;
   padding-right: 65px;
 }
 
 @media (max-width: $tablet-width) {
   .site-menu__list {
-
     flex-direction: column;
   }
-
-
 }

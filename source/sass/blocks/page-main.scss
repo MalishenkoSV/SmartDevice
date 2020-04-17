@@ -4,8 +4,6 @@
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  position: relative;
-
   z-index: 1;
 }
 
@@ -32,7 +30,6 @@
 
 .page-main__screen {
   margin-right: auto;
-  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -63,20 +60,20 @@
 
 .page-main__text {
   @include font-medium;
-    padding-left: 95px;
-    margin-bottom: 37px;
-    max-width: 778px;
-    position: relative;
-
+  padding-left: 95px;
+  margin-bottom: 37px;
+  max-width: 778px;
+  position: relative;
 }
+
 .page-main__text::before {
-    content: "";
-    width: 66px;
-    height: 2px;
-    position: absolute;
-    background-color: $white;
-    top: 15px;
-    left: 0;
+  content: "";
+  width: 66px;
+  height: 2px;
+  position: absolute;
+  background-color: $white;
+  top: 15px;
+  left: 0;
 }
 
 .page-main .page-main__btn {
@@ -97,14 +94,14 @@
 }
 
 .page-main__scroll {
+  @include font-min;
   position: absolute;
-  bottom:  93px;
+  bottom: 93px;
   left: 143px;
   height: 93px;
   width: 13px;
   display: inline-block;
   transform: rotate(270deg);
-  @include font-min;
   text-decoration: none;
   color: $white;
   opacity: 0.5;
@@ -113,8 +110,8 @@
 
 @media (max-width: $tablet-width) {
   .page-main__title {
-    max-width: 470px;
     @include font-condensed-medium;
+    max-width: 470px;
   }
 
   .page-main__text {
@@ -127,15 +124,16 @@
   .page-main__scroll {
     display: none;
   }
+
   .page-main__text::before {
     width: 33px;
     height: 2px;
     top: 15px;
     left: 0;
   }
+
   .page-main__screen {
-    padding: 0;
-    padding: 247px;
+    padding: 116px 65px 160px;
   }
 
   .page-main__screen::after {
@@ -146,26 +144,21 @@
     top: 0;
     right: 0;
   }
-    .page-main__maska {
+
+  .page-main__maska {
     margin-bottom: 54px;
   }
 
   .page-main__btn {
     margin-bottom: 163px;
   }
-
-
-  .page-main__screen {
-    padding: 116px 65px 160px;
-  }
-
 }
-@media (max-width: $mobile-width) {
 
+@media (max-width: $mobile-width) {
   .page-main__title {
-    padding: 0;
     @include font-condensed-bold;
     margin-bottom: 30px;
+    padding: 0;
   }
 
   .page-main__text {
@@ -186,6 +179,7 @@
     top: 15px;
     right: -5px;
   }
+
   .page-main__maska {
     margin-bottom: 37px;
   }
@@ -198,11 +192,11 @@
 
   .page-main__btn {
     display: none;
-
   }
+
   .page-main .page-main__btn-mobile {
-    display: inline-block;
     @include font-condensed-basic;
+    display: inline-block;
     padding: 17px 11px;
     text-transform: uppercase;
     text-align: center;

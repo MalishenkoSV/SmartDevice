@@ -1,6 +1,5 @@
 .copyrights {
   position: relative;
-
 }
 
 .copyrights::before {
@@ -29,14 +28,13 @@
 
 .copyrights__link {
   text-decoration: none;
-
 }
 
 .copyrights__info,
 .copyrights__link {
   @include font-supermin;
   padding: 14px 0;
-  color: $ftgrey;
+  color: $bg-black;
   text-transform: uppercase;
   opacity: 0.5;
 }
@@ -52,16 +50,13 @@
   left: 250px;
 }
 
-  @media (max-width: $tablet-width) {
-    .copyrights__info--right {
-      display: none;
+@media (max-width: $tablet-width) {
+  .copyrights__info--right {
+    display: none;
   }
-
-
 
   .copyrights__info--SD {
     top: -345px;
     left: 320px;
   }
-
 }

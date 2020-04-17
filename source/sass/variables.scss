@@ -1,21 +1,19 @@
-$bg-black: #1B2D37;
-$bg-lightgrey:#E5E5E5;
-$bg-blue: #00B2FF;
+$bg-black: #1b2d37;
+$bg-lightgrey:#e5e5e5;
+$bg-blue: #00b2ff;
 $white: #ffffff;
 $middlegrey: #666666;
-$superlightgrey: #EBEBEB;
-$darkgrey: #203C42;
-$white-grey: #FAFAFA;
+$superlightgrey: #ebebeb;
+$darkgrey: #203c42;
+$white-grey: #fafafa;
 $grey: #788891;
-$ss-grey: #CDCDCD;
+$ss-grey: #cdcdcd;
 $grey :#788891;
-$ftgrey: #1B2D37;
 $mobile-width: 767px;
 $tablet-width: 1023px;
 
-
 @mixin font-supermin {
-  font-family: "PT Mono";
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -23,14 +21,15 @@ $tablet-width: 1023px;
 }
 
 @mixin font-superbasic {
-  font-family: "PT Mono";
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
 }
+
 @mixin font-basic {
-  font-family: "PT Mono";
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -38,7 +37,7 @@ $tablet-width: 1023px;
 }
 
 @mixin font-min {
-  font-family: "PT Mono";
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -46,7 +45,7 @@ $tablet-width: 1023px;
 }
 
 @mixin font-medium {
-  font-family: "PT Mono";
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -54,7 +53,7 @@ $tablet-width: 1023px;
 }
 
 @mixin font-condensed-btn {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -65,7 +64,7 @@ $tablet-width: 1023px;
 }
 
 @mixin font-condensed-title {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -73,15 +72,22 @@ $tablet-width: 1023px;
 }
 
 @mixin font-condensed-basic {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
 }
 
+@mixin font-condensed-20 {
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+}
+
 @mixin font-condensed {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -89,7 +95,7 @@ $tablet-width: 1023px;
 }
 
 @mixin font-condensed-popup {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -97,7 +103,7 @@ $tablet-width: 1023px;
 }
 
 @mixin font-condensed-min {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -105,7 +111,7 @@ $tablet-width: 1023px;
 }
 
 @mixin font-condensed-min {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -113,7 +119,7 @@ $tablet-width: 1023px;
 }
 
 @mixin font-condensed-bold {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -122,10 +128,8 @@ $tablet-width: 1023px;
   text-transform: uppercase;
 }
 
-
-
 @mixin font-condensed-medium {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -135,20 +139,18 @@ $tablet-width: 1023px;
 }
 
 @mixin font-condensed-max {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-
 }
 
 @mixin font-condensed-supermax {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-size: 120px;
   font-weight: 700;
   line-height: 1.15;
 }
-

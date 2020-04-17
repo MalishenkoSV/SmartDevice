@@ -36,8 +36,8 @@
   width: 19px;
   height: 14px;
   background-image: url("../img/icon-phone.svg");
-
 }
+
 .nav__link--mail::before {
   width: 18px;
   height: 18px;
@@ -67,12 +67,9 @@
 }
 
 .nav__btn {
+  @include font-condensed-btn;
   width: 180px;
   height: 45px;
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
   line-height: 16px;
   text-align: center;
   vertical-align: middle;
@@ -112,13 +109,14 @@
     width: 157px;
     justify-content: space-between;
     align-items: flex-start;
-
   }
+
   .nav__list {
     width: 135px;
     justify-content: space-between;
     padding-top: 10px;
   }
+
   .nav__link {
     font-size: 0;
   }
@@ -139,8 +137,8 @@
     height: 1px;
     background-color: $white;
     margin-bottom: 11px;
-
   }
+
   .nav__item--btn {
     display: none;
   }
@@ -164,9 +162,11 @@
   .nav {
     width: 137px;
   }
+
   .nav__link--tel {
     padding-right: 40px;
   }
+
   .nav__link--tel::before {
     left: 15px;
     top: 0;

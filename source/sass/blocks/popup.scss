@@ -8,7 +8,7 @@
   left: calc(50% - 240px);
   z-index: 200;
   transform: translateY(-1000px);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .popup__show {
@@ -29,10 +29,6 @@
   margin-bottom: 50px;
   line-height: 16px;
   max-width: 100%;
-}
-
-.popup__form {
-  display: flex;
 }
 
 .popup__form {
@@ -76,6 +72,7 @@
 .popup .form__btn {
   width: 100%;
 }
+
 .popup .form__data-process {
   width: 100%;
 }
@@ -93,5 +90,5 @@
 
 .modal__error {
   animation-name: shake;
-  animation-duration:  0.6s;
+  animation-duration: 0.6s;
 }

@@ -4,17 +4,18 @@
 }
 
 .form__text {
-    background-color: rgba(255, 255, 255,  0.1);
-    border: none;
-    color: $white;
-    width: 45%;
-    margin-bottom: 40px;
-    display: flex;
-    align-items: stretch;
-    padding: 15px;
+  color: $white;
+  opacity: 0.1;
+  border: none;
+  width: 45%;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: stretch;
+  padding: 15px;
 }
+
 .form__text::placeholder {
-    color: $white;
+  color: $white;
 }
 
 .form__text--textarea {
@@ -22,9 +23,7 @@
 }
 
 .form__btn {
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  font-size: 14px;
+  @include font-condensed-btn;
   color: #ffffff;
   margin-bottom: 40px;
   padding: 15px 79px;
@@ -47,8 +46,8 @@
 }
 
 .form__data-process::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 16px;
@@ -56,14 +55,14 @@
   border: 1px solid $white;
 }
 
-.form__chkbx:checked + .form__data-process::after  {
+.form__chkbx:checked + .form__data-process::after {
   content: "";
   position: absolute;
   top: 5px;
   left: 4px;
   width: 10px;
   height: 10px;
-  background: url(../img/chbox.svg) no-repeat;
+  background: url("../img/chbox.svg") no-repeat;
 }
 
 @media (max-width: $tablet-width) {

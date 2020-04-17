@@ -10,7 +10,6 @@
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .attribute__item {
@@ -21,10 +20,8 @@
   color: $middlegrey;
   line-height: 22px;
   padding: 98px 44px 50px 45px;
-  position: relative;
   margin-left: 5px;
 }
-
 
 .attribute__item::before {
   content: "";
@@ -70,9 +67,9 @@
 }
 
 .attribute__title {
+  @include font-condensed;
   margin-top: 15px;
   color: $bg-blue;
-  @include font-condensed;
   margin-bottom: 15px;
 }
 
@@ -88,8 +85,8 @@
 @media (max-width: 1199px) {
   .attribute__list {
     max-width: 1040px;
-
   }
+
   .attribute__item {
     max-width: 475px;
   }
@@ -98,8 +95,8 @@
 @media (max-width: $tablet-width) {
   .attribute__list {
     max-width: 750px;
-
   }
+
   .attribute__item {
     max-width: 345px;
   }
@@ -108,11 +105,10 @@
 @media (max-width: $mobile-width) {
   .attribute__list {
     width: auto;
-
   }
+
   .attribute__item {
     min-width: 290px;
     margin-bottom: 30px;
   }
-
 }

@@ -16,8 +16,8 @@
 }
 
 .site-contacts__link {
-  min-width: 333px;
   @include font-superbasic;
+  min-width: 333px;
 }
 
 @media (max-width: $tablet-width) {
@@ -27,7 +27,6 @@
 
   .communication__list {
     flex-wrap: wrap;
-
   }
 
   .communication__item--logo {
