@@ -80,16 +80,16 @@
 }
 
 .page-main .page-main__btn {
+  @include font-condensed-basic;
   box-sizing: border-box;
-   max-width: 407px;
-   @include font-condensed-basic;
-   text-align: center;
-   padding: 17px 28px 14px 28px;
-   margin-left: 98px;
-   margin-bottom: 93px;
-   text-transform: uppercase;
-   background-color: $bg-blue;
-   border-color: $bg-blue;
+  max-width: 407px;
+  text-align: center;
+  padding: 17px 28px 14px 28px;
+  margin-left: 98px;
+  margin-bottom: 93px;
+  text-transform: uppercase;
+  background-color: $bg-blue;
+  border-color: $bg-blue;
 }
 
 .page-main__btn-mobile {
@@ -113,8 +113,8 @@
 
 @media (max-width: $tablet-width) {
   .page-main__title {
-     max-width: 470px;
-     @include font-condensed-medium;
+    max-width: 470px;
+    @include font-condensed-medium;
   }
 
   .page-main__text {
@@ -135,7 +135,7 @@
   }
   .page-main__screen {
     padding: 0;
-     padding: 247px;
+    padding: 247px;
   }
 
   .page-main__screen::after {

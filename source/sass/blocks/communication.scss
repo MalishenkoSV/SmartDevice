@@ -22,7 +22,7 @@
 
 @media (max-width: $tablet-width) {
   .communication__wripper {
-     width: 91%;
+    width: 91%;
   }
 
   .communication__list {
@@ -31,9 +31,9 @@
   }
 
   .communication__item--logo {
-     width: 100%;
-     padding-top: 19px;
-     padding-bottom: 26px;
+    width: 100%;
+    padding-top: 19px;
+    padding-bottom: 26px;
   }
 
   .communication__item--logo::before {
@@ -45,6 +45,5 @@
     left: 0;
     background-color: $ss-grey;
     opacity: 0.2;
- }
-
+  }
 }

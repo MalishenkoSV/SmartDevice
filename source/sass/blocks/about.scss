@@ -45,7 +45,7 @@
 }
 
 @media only screen and ( min-resolution: 124.8dpi ),
-       only screen and ( min-resolution: 1.3dppx ) {
+        only screen and ( min-resolution: 1.3dppx ) {
   .about__wrapper::before {
     background: url("../img/digiboard@2x.png");
   }

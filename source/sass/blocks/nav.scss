@@ -5,13 +5,12 @@
 }
 
 .nav__list {
-   display: flex;
-
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   padding-top: 15px;
-   max-width: 660px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  max-width: 660px;
 }
 
 .nav__item {
@@ -47,7 +46,7 @@
 }
 
 .nav__item--tel {
-   margin-left: 7%;
+  margin-left: 7%;
 }
 
 .nav__item--btn {
@@ -55,10 +54,10 @@
 }
 
 .nav__link--tel {
-   width: 17px;
-   height: 17px;
-   padding-top: 20px;
-   white-space: nowrap;
+  width: 17px;
+  height: 17px;
+  padding-top: 20px;
+  white-space: nowrap;
 }
 
 .nav__link--mail {
@@ -84,7 +83,7 @@
 }
 
 .nav__open-menu {
-   position: relative;
+  position: relative;
 }
 
 .nav__open-menu::before {
@@ -154,11 +153,11 @@
   }
 
   .nav__link--tel::before {
-     width: 24px;
-     height: 24px;
-     left: 15px;
-     top: -12px;
-   }
+    width: 24px;
+    height: 24px;
+    left: 15px;
+    top: -12px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -168,9 +167,8 @@
   .nav__link--tel {
     padding-right: 40px;
  }
- .nav__link--tel::before {
-  left: 15px;
-  top: 0;
+  .nav__link--tel::before {
+    left: 15px;
+    top: 0;
  }
-
 }
