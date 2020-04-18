@@ -3,18 +3,13 @@
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  z-index: 1;
+  overflow: hidden;
 }
 
-.page-main__screen{
-  background-image: url("../img/maska1x.png");
+.page-main__screen {
   background-color: $bg-black;
+  background-image: url("../img/maska1x.png");
   width: 100%;
-  z-index: 2;
-}
-
-.page-main__menu {
-  display: flex;
 }
 
 .page-main__title {
@@ -26,6 +21,9 @@
   flex-wrap: wrap;
 }
 
+.page-main__advice {
+  display: inline-block;
+}
 
 .page-main__color {
   margin-right: auto;
@@ -34,7 +32,6 @@
   align-self: flex-start;
   padding: 247px 0 278px;
   position: relative;
-  z-index: 10;
 }
 
 .page-main__color::after {
@@ -48,12 +45,10 @@
   background-size: cover;
   top: 200px;
   right: -170px;
-  z-index: -1;
 }
 
 .page-main__wrapper {
   position: relative;
-  background-color: $bg-black;
   margin-bottom: 179px;
 }
 
@@ -88,7 +83,7 @@
   border-color: $bg-blue;
 }
 
-.page-main__btn-mobile {
+.page-main__advice-mobile {
   display: none;
 }
 
@@ -189,7 +184,7 @@
     z-index: 1;
   }
 
-  .page-main__btn {
+  .page-main__advice {
     display: none;
   }
 

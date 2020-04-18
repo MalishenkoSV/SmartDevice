@@ -20,15 +20,3 @@ img {
 *::after {
   box-sizing: inherit;
 }
-
-@media (max-width: $tablet-width) {
-  body {
-    max-width: 1023px;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  body {
-    max-width: 767px;
-  }
-}

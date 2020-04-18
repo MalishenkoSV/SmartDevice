@@ -4,9 +4,12 @@
   margin-bottom: 15px;
 }
 
-.about__company {
-  margin-bottom: 30px;
+.about__description {
   color: $middlegrey;
+}
+
+.about__description--two {
+  margin-bottom: 30px;
 }
 
 .about__btn {
@@ -52,16 +55,16 @@
 
 @media (max-width: $tablet-width) {
   .about__wrapper {
-    max-width: 532px;
     padding-left: 180px;
     padding-bottom: 80px;
+    margin: 0 25px 83px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .about__wrapper {
-    max-width: 532px;
-    padding: 15px;
+    padding-left: 0;
+    margin: 0 15px 65px;
   }
 
   .about__wrapper::before {
