@@ -1,15 +1,14 @@
 .page-main {
-  position: absolute;
-  top: -10px;
+  margin-top: -220px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
   z-index: 1;
 }
 
-.page-main__color {
-  background-color: $bg-black;
+.page-main__screen{
   background-image: url("../img/maska1x.png");
+  background-color: $bg-black;
   width: 100%;
   z-index: 2;
 }
@@ -28,7 +27,7 @@
 }
 
 
-.page-main__screen {
+.page-main__color {
   margin-right: auto;
   display: flex;
   flex-direction: column;
@@ -38,7 +37,7 @@
   z-index: 10;
 }
 
-.page-main__screen::after {
+.page-main__color::after {
   content: "";
   width: 705px;
   height: 515px;
@@ -132,11 +131,11 @@
     left: 0;
   }
 
-  .page-main__screen {
+  .page-main__color {
     padding: 116px 65px 160px;
   }
 
-  .page-main__screen::after {
+  .page-main__color::after {
     width: 465px;
     height: 340px;
     background-position: 220px  60px;

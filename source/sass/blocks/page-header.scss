@@ -1,7 +1,5 @@
 .page-header {
   padding-top: 35px;
-  background-color: $bg-black;
-  background-image: url("../img/maska1x.png");
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -9,15 +7,16 @@
 }
 
 .page-header__logo {
-  content: "";
   display: inline-block;
-  position: absolute;
   width: 202px;
   height: 52px;
-  background-image: url("../img/icon-logo.svg");
   background-repeat: no-repeat;
   bottom: 0;
   right: 0;
+}
+
+.page-header__img-mobile {
+  display: none;
 }
 
 .page-header__menu {
@@ -51,15 +50,14 @@
     width: 135px;
   }
 
-  .page-header__logo {
-    min-width: 40px;
-    background-image: url("../img/icon-logo-mobile.svg");
-  }
-
-  .page-header__icon-mobile {
+  .page-header__img-mobile {
     display: block;
     width: 38px;
     height: 38px;
+  }
+
+  .page-header__img{
+    display: none;
   }
 
   .page-header .page-header__wrapper {
