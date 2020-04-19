@@ -7,18 +7,20 @@
 }
 
 .page-main__screen {
+  width: 100%;
+  padding: 0 30px;
   background-color: $bg-black;
   background-image: url("../img/maska1x.png");
-  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-main__title {
   @include font-condensed-max;
   text-transform: uppercase;
-  margin-bottom: 31px;
-  max-width: 718px;
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 27px;
+  max-width: 800px;
+  z-index: 2;
 }
 
 .page-main__advice {
@@ -30,7 +32,7 @@
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  padding: 247px 0 278px;
+  padding: 367px 0 185px;
   position: relative;
 }
 
@@ -43,21 +45,22 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  top: 200px;
-  right: -170px;
+  top: 390px;
+  right: -75px;
 }
 
 .page-main__wrapper {
   position: relative;
-  margin-bottom: 179px;
+  // margin-top: 179px;
 }
 
 .page-main__text {
   @include font-medium;
   padding-left: 95px;
-  margin-bottom: 37px;
+  margin: 0 0 45px;
   max-width: 778px;
   position: relative;
+  z-index: 2;
 }
 
 .page-main__text::before {
@@ -70,17 +73,17 @@
   left: 0;
 }
 
-.page-main .page-main__btn {
+.page-main__btn {
   @include font-condensed-basic;
-  box-sizing: border-box;
-  max-width: 407px;
+  width: 407px;
   text-align: center;
-  padding: 17px 28px 14px 28px;
-  margin-left: 98px;
+  padding: 17px 28px 14px;
+  margin-left: 6.5%;
   margin-bottom: 93px;
   text-transform: uppercase;
   background-color: $bg-blue;
   border-color: $bg-blue;
+  z-index: 1;
 }
 
 .page-main__advice-mobile {
@@ -90,11 +93,8 @@
 .page-main__scroll {
   @include font-min;
   position: absolute;
-  bottom: 93px;
-  left: 143px;
-  height: 93px;
+  bottom: 87px;
   width: 13px;
-  display: inline-block;
   transform: rotate(270deg);
   text-decoration: none;
   color: $white;
@@ -103,16 +103,23 @@
 
 
 @media (max-width: $tablet-width) {
+  .page-main {
+    margin-top: -90px;
+  }
+
   .page-main__title {
     @include font-condensed-medium;
+    margin-bottom: 30px;
     max-width: 470px;
   }
 
   .page-main__text {
     min-width: 356px;
     font-size: 18px;
+    line-height: 1.568;
+    margin-bottom: 55px;
     padding-left: 50px;
-    width: 54%;
+    width: 67%;
   }
 
   .page-main__scroll {
@@ -127,16 +134,15 @@
   }
 
   .page-main__color {
-    padding: 116px 65px 160px;
+    padding: 145px 11.4% 90px;
   }
 
   .page-main__color::after {
     width: 465px;
     height: 340px;
-    background-position: 220px  60px;
     background-size: 100%;
-    top: 0;
-    right: 0;
+    top: 120px;
+    right: -220px;
   }
 
   .page-main__maska {
@@ -144,34 +150,49 @@
   }
 
   .page-main__btn {
-    margin-bottom: 163px;
+    margin-bottom: 54px;
+    line-height: 1.4;
+    width: 379px;
+    margin-left: 8.5%;
   }
 }
 
 @media (max-width: $mobile-width) {
+  .page-main__color {
+    padding: 145px 3.2% 90px;
+  }
+
   .page-main__title {
     @include font-condensed-bold;
-    margin-bottom: 30px;
     padding: 0;
+    margin-bottom: 27px;
   }
 
   .page-main__text {
-    max-width: 245px;
-    padding-left: 45px;
+    width: 100%;
+    min-width: 256px;
+    padding-left: 50px;
+    font-size: 16px;
+    margin-bottom: 40px;
   }
 
-  .page-main__screen {
+  .page-main__text::before {
+    top: 15px;
+    left: 3px;
+  }
+
+  .page-main__color {
     padding: 0;
-    padding-top: 216px;
+    padding: 267px 5% 0;
   }
 
-  .page-main__screen::after {
+  .page-main__color::after {
     width: 301px;
     height: 220px;
     background-position: 0  0;
     background-size: 100%;
-    top: 15px;
-    right: -5px;
+    top: 113px;
+    right: -7px;
   }
 
   .page-main__maska {
@@ -180,22 +201,29 @@
 
   .page-main__wrapper {
     padding-top: 0;
-    padding-right: 20px;
-    z-index: 1;
+    // padding-right: 20px;
+    // z-index: 1;
   }
 
   .page-main__advice {
     display: none;
   }
 
-  .page-main .page-main__btn-mobile {
+  .page-main__btn {
+    width: 100%;
+    min-width: 256px;
+    margin: 0 0 70px;
+    padding: 15px 28px 15px;
+  }
+
+  .page-main__advice-mobile {
     @include font-condensed-basic;
     display: inline-block;
-    padding: 17px 11px;
+    // padding: 17px 11px;
+    font-size: 17px;
     text-transform: uppercase;
     text-align: center;
     background-color: $bg-blue;
     border-color: $bg-blue;
-    margin-bottom: 70px;
   }
 }

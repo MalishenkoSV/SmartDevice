@@ -2,29 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link type="font/woff2" rel="preload" as="font" href="fonts/ptmono-regular.woff2">
-    <link type="font/woff2" rel="preload" as="font" href="fonts/robotocondensed-regular.woff2">
-    <link type="font/woff2" rel="preload" as="font" href="fonts/robotocondensed-bold.woff2">
-    <link type="font/woff" rel="preload" as="font" href="fonts/ptmono-regular.woff">
-    <link type="font/woff" rel="preload" as="font" href="fonts/robotocondensed-regular.woff">
-    <link type="font/woff" rel="preload" as="font" href="fonts/robotocondensed-bold.woff">
-    <link href="css/style.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Официальный страница компании Smart Device">
     <meta name="format-detection" content="telephone=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="font/woff2" rel="preload" as="font" href="fonts/ptmono-regular.woff2" crossorigin="anonymous">
+    <link type="font/woff2" rel="preload" as="font" href="fonts/robotocondensed-regular.woff2" crossorigin="anonymous">
+    <link type="font/woff2" rel="preload" as="font" href="fonts/robotocondensed-bold.woff2" crossorigin="anonymous">
+    <link type="font/woff" rel="preload" as="font" href="fonts/ptmono-regular.woff" crossorigin="anonymous">
+    <link type="font/woff" rel="preload" as="font" href="fonts/robotocondensed-regular.woff" crossorigin="anonymous">
+    <link type="font/woff" rel="preload" as="font" href="fonts/robotocondensed-bold.woff" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>Smart Device</title>
   </head>
   <body>
       <div style="display: none;">
-          <include src="build/img/sprite_auto.svg"></include>
+          <include src="build/img/sprite/sprite_auto.svg"></include>
       </div>
       <header class="page-header page-header--nojs">
           <h1 class="visually-hidden">Smart Device</h1>
           <div class="page-header__wrapper wrapper wrapper--block">
               <a class="page-header__logo logo">
-                  <img class="page-header__img" src="img/icon-logo.svg" width="202" height="52" alt="Логотип Smart Device">
-                  <img class="page-header__img-mobile" src="img/icon-logo-mobile.svg" width="38" height="38" alt="Логотип Smart Device">
+                  <img class="page-header__img" src="img/sprite/icon-logo.svg" width="215" height="52" alt="Логотип Smart Device">
+                  <img class="page-header__img-mobile" src="img/sprite/icon-logo-mobile.svg" width="38" height="38" alt="Логотип Smart Device">
               </a>
               <nav class="page-header__nav nav">
                   <button type="button" class="nav__burger menu-btn">
@@ -67,21 +69,25 @@
           </section>
           <section id="attribute" class="page-main__promotion attribute">
               <h3 class="visually-hidden">Преимущества компании</h3>
-              <div class="wrapper wrapper--light">
+              <div class="attribute__wrapper wrapper wrapper--light">
                   <ul class="attribute__list">
                       <li class="attribute__item attribute__item--terms">
+                          <svg width="45" height="40" fill="red"><use xlink:href="#icon-stopwatch.svg"></use></svg>
                           <h4 class="attribute__title">Оперативные сроки </h4>
                           <p class="attribute__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
                       </li>
                       <li class="attribute__item attribute__item--provider">
+                          <svg width="35" height="35"><use xlink:href="#icon-hired.svg"></use></svg>
                           <h4 class="attribute__title">Крупные поставщики</h4>
                           <p class="attribute__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции</p>
                       </li>
                       <li class="attribute__item attribute__item--detective">
+                          <svg width="36" height="31"><use xlink:href="#icon-detective.svg"></use></svg>
                           <h4 class="attribute__title">Полная конфиденциальность</h4>
                           <p class="attribute__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
                       </li>
                       <li class="attribute__item attribute__item--cost">
+                          <svg width="35" height="35"><use xlink:href="#icon-tag.svg"></use></svg>
                           <h4 class="attribute__title">Персонализация стоимости</h4>
                           <p class="attribute__text">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
                       </li>
@@ -99,9 +105,9 @@
                       </p>
                       <p class="about__description about__description--two">
                           Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-                          Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                          Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__2dots">..</span><span class="about__two"> (РЖД),
                           РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-                          Среди наших клиентов крупнейшие Производители светотехники России.
+                          Среди наших клиентов крупнейшие Производители светотехники России.</span>
                       </p>
                   <a href="#" class="about__btn btn">Подробнее</a>
               </div>
@@ -147,16 +153,17 @@
                       <textarea cass="form__text form__text--textarea" form="consulting_form" id="client_text" name="feedback_form_question" rows="5" placeholder="Ваш вопрос"></textarea>
                       <button cass="form__btn" type="submit">Задать вопрос</button>
                       <input cass="form__chkbx" type="checkbox" form="consulting_form" name="agree" id="feedback_form_data_process" checked>
-                      <label cass="form__data-process" for="feedback_form_data_process">Я согласен на обработку персональных данных</label>
+                      <label class="form__data-process" for="feedback_form_data_process">Я согласен на обработку персональных данных</label>
                   </form>
               </div>
           </section>
-          <div class="footer__communication communication communication__wripper">
+          <section class="footer__communication communication communication__wripper">
+            <h3 class="footer__title visually-hidden">Комуникация с компанией</h3>
               <ul class="communication__list">
                   <li class="communication__item communication__item--logo social">
-                      <a class="footer__logo logo">
-                          <svg class="logo__icon"><use xlink:href="#icon-logo"></use></svg>
-                          <svg class="logo__icon-mobile"><use xlink:href="#icon-logo-mobile"></use></svg>
+                      <p class="social__service-years">1999-2018 SD Service Devices</p>
+                      <a class="social__logo logo" aria-label="Логотип Service Device">
+                          <img class="page-header__img" src="img/sprite/icon-logo-service-device.svg" width="215" height="52" alt="Логотип Service Device">
                       </a>
                       <ul class="social__list">
                           <li class="social__item social__item--fb">
@@ -177,24 +184,29 @@
                       </ul>
                   </li>
                   <li class="communication__item site-menu">
-                      <h5 class="footer__title">Разделы сайта</h5>
-                      <ul class="site-menu__list">
-                          <li class="site-menu__item"><a href="#" class="site-menu__link">О компании</a></li>
-                          <li class="site-menu__item"><a href="#" class="site-menu__link">Продукты</a></li>
-                          <li class="site-menu__item"><a href="#" class="site-menu__link">Производство печатных плат</a></li>
-                          <li class="site-menu__item"><a href="#" class="site-menu__link">Монтаж печатных плат</a></li>
-                          <li class="site-menu__item"><a href="#" class="site-menu__link" >Комплектующие</a></li>
-                          <li class="site-menu__item"><a href="#" class="site-menu__link">Доставка</a></li>
-                          <li class="site-menu__item"><a href="#" class="site-menu__link">Контакты</a></li>
-                      </ul>
+                      <h4 class="site-menu__title">Разделы сайта</h4>
+                      <button class="communication__accordion-btn accordion-btn" type="button" aria-label="Показать\скрыть подробности"></button>
+                      <div class="site-menu__lists">
+                          <ul class="site-menu__list site-menu__list--nav">
+                              <li class="site-menu__item"><a href="#" class="site-menu__link">О компании</a></li>
+                              <li class="site-menu__item"><a href="#" class="site-menu__link">Продукты</a></li>
+                              <li class="site-menu__item"><a href="#" class="site-menu__link">Производство печатных плат</a></li>
+                              <li class="site-menu__item"><a href="#" class="site-menu__link">Монтаж печатных плат</a></li>
+                          </ul>
+                          <ul class="site-menu__list site-menu__list--delivery">
+                              <li class="site-menu__item"><a href="#" class="site-menu__link" >Комплектующие</a></li>
+                              <li class="site-menu__item"><a href="#" class="site-menu__link">Доставка</a></li>
+                              <li class="site-menu__item"><a href="#" class="site-menu__link">Контакты</a></li>
+                          </ul>
+                    </div>
                   </li>
                   <li class="communication__item site-contacts">
-                      <h5 class="footer__title">Наш офис</h5>
+                      <h4 class="footer__title">Наш офис</h4>
                       <ul class="site-contacts__list">
                           <li class="site-contacts__item"><a href="#" class="site-contacts__link site-contacts__link--adress">г. Мытищи, Олимпийский проспект, д.10</a></li>
-                          <li class="site-contacts__item"><a href="+7495589-40-50" class="site-contacts__link">+7 (495) 589-40-50</a></li>
-                          <li class="site-contacts__item"><a href="+7925003-87-67" class="site-contacts__link">+7 (925) 003-87-67</a></li>
-                          <li class="site-contacts__item"><a href="+7926926-080-79" class="site-contacts__link">+7 (926) 926-080-79</a></li>
+                          <li class="site-contacts__item"><a href="+74955894050" class="site-contacts__link">+7 (495) 589-40-50</a></li>
+                          <li class="site-contacts__item"><a href="+79250038767" class="site-contacts__link">+7 (925) 003-87-67</a></li>
+                          <li class="site-contacts__item"><a href="+792692608079" class="site-contacts__link">+7 (926) 926-080-79</a></li>
                       </ul>
                   </li>
               </ul>
@@ -212,22 +224,25 @@
                       </li>
                   </ul>
               </div>
-          </div>
+          </section>
       </footer>
-      <div class="overlay"></div>
-      <div class="popup">
-          <button type="button" class="popup__btn-close" aria-label="Закрытие окно обратной связи"></button>
-            <h6 class="popup__title">Закажите звонок</h6>
-            <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-            <form method="post" class="popup__form form" action="https://echo.htmlacademy.ru" autocomplete="on" name="popup-form" id="popup_form" accept-charset="utf-8">
-                <input class="form__text form__text_name" required form="popup_form" id="popup_client_name" type="text" name="name-user" placeholder="Имя">
-                <input class="form__text form__text_tel" required form="popup_form" id="popup_client_tel" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон">
-                <textarea class="form__text form__text_textarea" form="popup_form" id="popup_client_text" name="popup-question" rows="3" placeholder="Ваш вопрос"></textarea>
-                <button class="form__btn" type="submit">Отправить</button>
-                <input class="form__chkbx" type="checkbox" form="popup_form" name="agree" id="popup_form_data_process" checked>
-                <label class="form__data-process" for="popup_form_data_process">Я согласен на обработку персональных данных</label>
-            </form>
-      </div>
+      <section class="popup">
+          <div class="overlay"></div>
+          <div class="popup__content">
+              <h3 class="visually-hidden">Форма обратной связи</h3>
+              <button type="button" class="popup__btn-close" aria-label="Закрытие окно обратной связи"></button>
+              <b class="popup__title">Закажите звонок</b>
+              <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+              <form method="post" class="popup__form form" action="https://echo.htmlacademy.ru" autocomplete="on" name="popup-form" id="popup_form" accept-charset="utf-8">
+                  <input class="form__text form__text_name" required form="popup_form" id="popup_client_name" type="text" name="name-user" placeholder="Имя">
+                  <input class="form__text form__text_tel" required form="popup_form" id="popup_client_tel" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон">
+                  <textarea class="form__text form__text_textarea" form="popup_form" id="popup_client_text" name="popup-question" rows="3" placeholder="Ваш вопрос"></textarea>
+                  <button class="form__btn" type="submit">Отправить</button>
+                  <input class="form__chkbx" type="checkbox" form="popup_form" name="agree" id="popup_form_data_process" checked>
+                  <label class="form__data-process" for="popup_form_data_process">Я согласен на обработку персональных данных</label>
+              </form>
+          </div>
+      </section>
       <script src="js/script.js"></script>
     </body>
 </html>

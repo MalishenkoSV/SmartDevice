@@ -1,9 +1,25 @@
+.social {
+  margin-bottom: 45px;
+  margin-right: 96px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.social__service-years {
+  display: none;
+}
+
 .social__list {
-  position: absolute;
-  list-style: none;
+  @include list-reset;
+  margin-top: 54px;
   display: flex;
   justify-content: space-between;
-  max-width: 112px;
+  width: 11%;
+}
+
+.social__item {
+  margin-right: 16px;
 }
 
 .social__icon {

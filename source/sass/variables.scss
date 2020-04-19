@@ -11,6 +11,13 @@ $ss-grey: #cdcdcd;
 $grey :#788891;
 $mobile-width: 767px;
 $tablet-width: 1023px;
+$transition-duration: 0.3s;
+$transition-type: ease;
+$opacity-hover: 0.6;
+$opacity-active: 0.3;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 
 @mixin font-supermin {
   font-family: "PT Mono", monospace;
