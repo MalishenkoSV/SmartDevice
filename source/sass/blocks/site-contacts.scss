@@ -1,3 +1,7 @@
+.site-contacts {
+  width: 24%;
+}
+
 .site-contacts__list {
   @include list-reset;
   display: flex;
@@ -21,4 +25,37 @@
   text-transform: uppercase;
   margin: 0 0 29px;
   color: $bg-black;
+}
+
+@media (max-width: $tablet-width) {
+  .site-contacts__list {
+    flex-direction: column;
+  }
+
+  .site-contacts {
+    width: 365px;
+    padding-top: 38px;
+    padding-right: 3.13%;
+    margin-left: 5%;
+  }
+
+  .site-contacts__title {
+    @include font-condensed-title;
+    padding-right: 48%;
+  }
+
+  .site-contacts__link {
+    @include font-superbasic;
+  }
+}
+@media (max-width: $mobile-width) {
+  .site-contacts {
+    padding-top: 38px;
+    padding-left: 3.13%;
+    margin: 0;
+  }
+
+  .site-contacts__link {
+    @include font-superbasic;
+  }
 }

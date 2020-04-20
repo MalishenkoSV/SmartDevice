@@ -1,11 +1,11 @@
 .social {
   width: 15%;
   margin-bottom: 45px;
-  margin-right: 15%;
+  margin-right: 11%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
+
 
 .social__service-years {
   display: none;
@@ -39,9 +39,50 @@
 }
 
 @media (max-width: $tablet-width) {
-  .social__list {
-    max-width: 112px;
-    top: 30px;
-    right: 0;
+  .social {
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5% 54px;
+    border-bottom: 1px solid rgba(98,105,98, .2);
   }
+
+  .social__link {
+    text-align: center;
+  }
+
+  .social__service-years {
+    display: block;
+    color: $bg-black;
+    opacity: 0.5;
+  }
+
+  .social__list {
+    padding-top: 12px;
+    margin: 0;
+   }
+}
+
+@media (max-width: $mobile-width) {
+   .social {
+     flex-direction: column;
+     padding: 0 14% 26px;
+     text-align: center;
+   }
+
+   .social__logo {
+     margin-bottom: 26px;
+   }
+
+   .social__service-years {
+     @include font-supermin;
+     margin: 0;
+     margin-bottom: 31px;
+   }
+
+   .social__list {
+    padding: 0 32.5%;
+    margin-top: 0;
+   }
 }

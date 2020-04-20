@@ -1,15 +1,6 @@
 .logo {
-  position: relative;
+  display: block;
   margin-left: 0;
-}
-
-.logo__icon {
-  width: 202px;
-  height: 52px;
-}
-
-.logo__icon-mobile {
-  display: none;
 }
 
 @media (max-width: $tablet-width) {
@@ -20,10 +11,6 @@
 
 @media (max-width: $mobile-width) {
   .logo {
-    max-width: 151px;
-  }
-
-  .logo__icon {
-    display: none;
+    max-width: 100%;
   }
 }

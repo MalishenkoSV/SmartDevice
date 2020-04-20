@@ -1,3 +1,54 @@
-.accordion-btn {
-  display: none;
+@media (max-width: $mobile-width) {
+  .accordion-btn {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      top: 50%;
+      left: 0;
+
+      background-color: $ac-grey;
+      transition: $transition-duration $transition-type;
+
+      @include pseudo(16px, 1px);
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+
+    &:focus {
+      &::before,
+      &::after {
+        background-color: $bg-black;
+      }
+    }
+
+    &--on {
+      &::before {
+        transform: rotate(-180deg);
+      }
+
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+
+    & + nav,
+    & + ul {
+      display: none;
+    }
+
+    &--on + nav,
+    &--on + ul {
+      display: flex;
+    }
+  }
 }

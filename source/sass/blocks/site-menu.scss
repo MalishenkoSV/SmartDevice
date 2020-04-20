@@ -1,8 +1,8 @@
 .site-menu {
-  width: 40%;
+  width: 520px;
   display: flex;
   flex-direction: column;
-  margin-right: 9%;
+  margin-right: 8%;
 }
 
 .site-menu__title {
@@ -25,8 +25,7 @@
 }
 
 .site-menu__list--about {
-  width: 47%;
-  margin-right: 65px;
+   width: 53%;
 }
 
 .site-menu__item {
@@ -44,6 +43,34 @@
 
 @media (max-width: $tablet-width) {
   .site-menu__list {
+    width: 100%;
     flex-direction: column;
+  }
+
+  .site-menu {
+    width: 45%;
+    padding-left: 3.13%;
+  }
+
+  .site-menu__nav {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+
+  .site-menu__title {
+    @include font-condensed-title;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .site-menu {
+    padding-left: 3.13%;
+    padding-top: 29px;
+    margin-bottom: 21px;
+    border-bottom: 1px solid rgba(98,105,98, .2);
+  }
+
+  .site-menu__link {
+    @include font-superbasic;
   }
 }

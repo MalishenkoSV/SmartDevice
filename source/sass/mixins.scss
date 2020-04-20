@@ -10,3 +10,10 @@
     @content;
   }
 }
+
+@mixin pseudo($width, $height, $position: absolute, $content: "") {
+  width: $width;
+  height: $height;
+  position: $position;
+  content: $content;
+}

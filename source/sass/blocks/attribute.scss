@@ -1,5 +1,5 @@
 .attribute {
-  padding-top: 109px;
+  padding: 110px 0 25px;
 }
 
 .attribute__list {
@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  width: 60.7%;
+  width: 61%;
   margin: 0 auto;
   padding: 0;
 }
@@ -20,7 +20,8 @@
   border: $superlightgrey 1px solid;
   border-left: $bg-blue 3px solid;
   color: $middlegrey;
-  padding: 40px 45px 49px 45px;
+  min-height: 299px;
+  padding: 40px 44.61px 49px 42.63px;
   margin-bottom: 30px;
   cursor: pointer;
   transition: $transition-duration $transition-type;
@@ -40,7 +41,7 @@
 
 .attribute__item svg {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   fill: $bg-blue;
 }
@@ -81,6 +82,11 @@
 }
 
 @media (max-width: $mobile-width) {
+  .attribute {
+    padding-top: 37px;
+    padding-bottom: 0;
+  }
+
   .attribute__list {
     width: 90.6%;
     flex-direction: column;

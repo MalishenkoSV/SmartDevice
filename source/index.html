@@ -50,7 +50,6 @@
               </nav>
           </div>
       </header>
-
       <main class="page-main">
           <section class="page-main__screen">
               <h2 class="visually-hidden">Главный экран</h2>
@@ -150,10 +149,10 @@
             <h3 class="footer__title visually-hidden">Комуникация с компанией</h3>
               <ul class="communication__list">
                   <li class="communication__item communication__item--logo social">
-                      <p class="social__service-years">1999-2018 SD Service Devices</p>
                       <a class="social__logo logo" aria-label="Логотип Service Device">
-                          <img class="page-header__img" src="img/sprite/icon-logo-service-device.svg" width="215" height="52" alt="Логотип Service Device">
+                          <img class="logo__img" src="img/sprite/icon-logo-service-device.svg" width="215" height="52" alt="Логотип Service Device">
                       </a>
+                      <p class="social__service-years">1999-2018 SD Service Devices</p>
                       <ul class="social__list">
                           <li class="social__item social__item--fb">
                               <a href="#" class="social__link social__link--fb">
@@ -175,7 +174,7 @@
                   <li class="communication__item site-menu">
                       <h4 class="site-menu__title">Разделы сайта</h4>
                       <button class="communication__accordion-btn accordion-btn" type="button" aria-label="Показать\скрыть подробности"></button>
-                      <div class="site-menu__nav">
+                      <nav class="site-menu__nav">
                           <ul class="site-menu__list site-menu__list--about">
                               <li class="site-menu__item"><a href="#" class="site-menu__link">О компании</a></li>
                               <li class="site-menu__item"><a href="#" class="site-menu__link">Продукты</a></li>
@@ -187,10 +186,11 @@
                               <li class="site-menu__item"><a href="#" class="site-menu__link">Доставка</a></li>
                               <li class="site-menu__item"><a href="#" class="site-menu__link">Контакты</a></li>
                           </ul>
-                      </div>
+                        </nav>
                   </li>
                   <li class="communication__item site-contacts">
                       <h4 class="site-contacts__title">Наш офис</h4>
+                      <button class="communication__accordion-btn accordion-btn" type="button" aria-label="Показать\скрыть подробности"></button>
                       <ul class="site-contacts__list">
                           <li class="site-contacts__item"><a href="#" class="site-contacts__link site-contacts__link--adress">г. Мытищи, Олимпийский проспект, д.10</a></li>
                           <li class="site-contacts__item"><a href="+74955894050" class="site-contacts__link">+7 (495) 589-40-50</a></li>
@@ -205,7 +205,7 @@
                           <span class="copyrights__info copyrights__info--right">Все права защищены</span>
                           <span class="copyrights__info copyrights__info--SD">1999-2018 SD Service Devices</span>
                       </li>
-                      <li class="copyrights__item">
+                      <li class="copyrights__item copyrights__item--two">
                           <a href="#" class="copyrights__link">Условия конфиденциальности</a>
                       </li>
                       <li class="copyrights__item">
@@ -224,7 +224,7 @@
               <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
               <form method="post" class="popup__form form" action="https://echo.htmlacademy.ru" autocomplete="on" name="popup-form" id="popup_form" accept-charset="utf-8">
                   <input class="form__text form__text_name" required form="popup_form" id="popup_client_name" type="text" name="name-user" placeholder="Имя">
-                  <input class="form__text form__text_tel" required form="popup_form" id="popup_client_tel" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон">
+                  <input class="form__text form__text_tel" required form="popup_form" id="popup_client_tel" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="10" placeholder="Телефон">
                   <textarea class="form__text form__text_textarea" form="popup_form" id="popup_client_text" name="popup-question" rows="3" placeholder="Ваш вопрос"></textarea>
                   <button class="form__btn" type="submit">Отправить</button>
                   <input class="form__chkbx" type="checkbox" form="popup_form" name="agree" id="popup_form_data_process" checked>

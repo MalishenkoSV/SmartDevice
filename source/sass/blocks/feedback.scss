@@ -1,6 +1,6 @@
 .feedback {
   background-color: $bg-blue;
-  padding-top: 95px;
+  padding-top: 90px;
   padding-bottom: 113px;
   line-height: 12px;
   margin-bottom: 60px;
@@ -9,9 +9,9 @@
 .feedback__container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1170px;
+  max-width: 1200px;
   position: relative;
-  padding-left: 570px;
+  padding: 0 15px 0 615px;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-end;
@@ -19,13 +19,14 @@
 
 .feedback__title {
   @include font-condensed-min;
+  margin: 0 0 15px;
   color: #ffffff;
-  margin-bottom: 15px;
+  font-size: 35px;
 }
 
 .feedback__text {
   color: #ffffff;
-  margin-bottom: 50px;
+  margin: 15px 0 55px;
   line-height: 16px;
 }
 
@@ -34,14 +35,15 @@
   position: absolute;
   background-image: url("../img/paper_airplane_3d_model@1x.png");
   background-repeat: no-repeat;
-  width: 519px;
-  height: 296px;
-  top: calc(50% - 148px);
-  left: -15px;
+  background-size: contain;
+  width: 515px;
+  height: 289px;
+  top: calc(50% - 183px);
+  left: -11px;
 
   @media only screen and (min-resolution: 124.8dpi),
     only screen and (min-resolution: 1.3dppx) {
-    background-image: url("../img/paper_airplane_3d_model@1x.png");
+    background-image: url("../img/paper_airplane_3d_model@2x.png");
   }
 }
 
@@ -56,11 +58,12 @@
   }
 
   .feedback__title {
-    font-weight: 32px;
+    font-size: 32px;
+    margin-bottom: 13px;
   }
 
   .feedback__container {
-    padding: 80px 100px;
+    padding: 80px 90px;
   }
 
   .feedback__container::before {
@@ -69,12 +72,15 @@
 }
 
 @media (max-width: $mobile-width) {
-  .feedback__title {
-    font-weight: 28px;
-  }
+.feedback__title {
+    line-height: 1.4;
+    font-size: 28px;
+    margin: 15px 0 14px;
+}
 
   .feedback__text {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    line-height: 1.4;
   }
 
   .feedback__container {
