@@ -14,6 +14,7 @@
 }
 
 .copyrights__list {
+  @include list-reset;
   min-width: 112px;
   list-style: none;
   display: flex;

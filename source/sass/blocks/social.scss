@@ -1,6 +1,7 @@
 .social {
+  width: 15%;
   margin-bottom: 45px;
-  margin-right: 96px;
+  margin-right: 15%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -13,6 +14,7 @@
 .social__list {
   @include list-reset;
   margin-top: 54px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
   width: 11%;

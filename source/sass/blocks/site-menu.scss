@@ -2,36 +2,40 @@
   width: 40%;
   display: flex;
   flex-direction: column;
+  margin-right: 9%;
 }
 
 .site-menu__title {
-  margin: 0 0 25px;
+  @include font-condensed-title;
+  text-transform: uppercase;
+  margin: 0 0 29px;
   color: $bg-black;
 }
 
-.site-menu__lists {
-  width: 23%;
+.site-menu__nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .site-menu__list {
   @include list-reset;
-  margin-right: 13%;
   display: flex;
   flex-direction: column;
 }
 
-.site-menu__list--nav {
-  @include list-reset;
+.site-menu__list--about {
+  width: 47%;
+  margin-right: 65px;
 }
 
 .site-menu__item {
   list-style: none;
-  margin-right: 65px;
+  margin-bottom: 5px;
 }
 
 .site-menu__link {
+  display: inline-block;
   text-decoration: none;
   color: $bg-black;
   opacity: 0.5;

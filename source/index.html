@@ -21,7 +21,7 @@
       <div style="display: none;">
           <include src="build/img/sprite/sprite_auto.svg"></include>
       </div>
-      <header class="page-header page-header--nojs">
+      <header class="page-header">
           <h1 class="visually-hidden">Smart Device</h1>
           <div class="page-header__wrapper wrapper wrapper--block">
               <a class="page-header__logo logo">
@@ -72,22 +72,22 @@
               <div class="attribute__wrapper wrapper wrapper--light">
                   <ul class="attribute__list">
                       <li class="attribute__item attribute__item--terms">
-                          <svg width="45" height="40" fill="red"><use xlink:href="#icon-stopwatch.svg"></use></svg>
+                          <svg width="45" height="40" fill="red"><use xlink:href="#icon-stopwatch"></use></svg>
                           <h4 class="attribute__title">Оперативные сроки </h4>
                           <p class="attribute__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
                       </li>
                       <li class="attribute__item attribute__item--provider">
-                          <svg width="35" height="35"><use xlink:href="#icon-hired.svg"></use></svg>
+                          <svg width="35" height="35"><use xlink:href="#icon-hired"></use></svg>
                           <h4 class="attribute__title">Крупные поставщики</h4>
                           <p class="attribute__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции</p>
                       </li>
                       <li class="attribute__item attribute__item--detective">
-                          <svg width="36" height="31"><use xlink:href="#icon-detective.svg"></use></svg>
+                          <svg width="36" height="31"><use xlink:href="#icon-detective"></use></svg>
                           <h4 class="attribute__title">Полная конфиденциальность</h4>
                           <p class="attribute__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
                       </li>
                       <li class="attribute__item attribute__item--cost">
-                          <svg width="35" height="35"><use xlink:href="#icon-tag.svg"></use></svg>
+                          <svg width="35" height="35"><use xlink:href="#icon-tag"></use></svg>
                           <h4 class="attribute__title">Персонализация стоимости</h4>
                           <p class="attribute__text">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
                       </li>
@@ -118,24 +118,13 @@
                   <h4 class="offers__title">Service Device предлагает следующие товары и услуги</h4>
                   <ul class="offers__list">
                       <li class="offers__item">
-                          <a href="#" class="offers__link offers__link--boards">Производство печатных плат</a>
+                        <a href="#" class="offers__link offers__link--boards">Производство печатных плат</a>
                       </li>
                       <li class="offers__item">
-                          <figure>
-                              <a href="#" class="offers__link offers__link--mount">Монтаж печатных плат
-                                  <picture>
-                                      <source type="image/webp" media="(max-width: 767px)" srcset="img/services_mobile_mount@1x.webp 1x, img/services_mobile_mount@2x.webp 2x">
-                                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/services_tablet_mount@1x.webp 1x, img/services_tablet_mount@2x.webp 2x">
-                                      <source type="image/webp" srcset="img/services_desktop_mount@1x.webp 1x, img/services_desktop_mount@2x.webp 2x">
-                                      <source media="(max-width: 767px)" srcset="img/services_mobile_mount@1x.jpg 1x, img/services_mobile_mount@2x.jpg 2x">
-                                      <source media="(max-width: 1023px)" srcset="img/services_tablet_mount@1x.jpg 1x, img/services_tablet_mount@x.jpg 2x">
-                                      <img class="offers__img" src="img/services_desktop_mount@1x.png" srcset="img/services_desktop_mount@2x.png 2x" width="371" height="620" alt="вертиканьно.">
-                                  </picture>
-                              </a>
-                          </figure>
+                        <a href="#" class="offers__link offers__link--mount">Монтаж печатных плат</a>
                       </li>
                       <li class="offers__item">
-                          <a href="#" class="offers__link offers__link--led">Комплектующие для светотехники</a>
+                        <a href="#" class="offers__link offers__link--led">Комплектующие для светотехники</a>
                       </li>
                   </ul>
               </div>
@@ -157,7 +146,7 @@
                   </form>
               </div>
           </section>
-          <section class="footer__communication communication communication__wripper">
+          <section class="footer__communication communication communication--wripper">
             <h3 class="footer__title visually-hidden">Комуникация с компанией</h3>
               <ul class="communication__list">
                   <li class="communication__item communication__item--logo social">
@@ -186,22 +175,22 @@
                   <li class="communication__item site-menu">
                       <h4 class="site-menu__title">Разделы сайта</h4>
                       <button class="communication__accordion-btn accordion-btn" type="button" aria-label="Показать\скрыть подробности"></button>
-                      <div class="site-menu__lists">
-                          <ul class="site-menu__list site-menu__list--nav">
+                      <div class="site-menu__nav">
+                          <ul class="site-menu__list site-menu__list--about">
                               <li class="site-menu__item"><a href="#" class="site-menu__link">О компании</a></li>
                               <li class="site-menu__item"><a href="#" class="site-menu__link">Продукты</a></li>
                               <li class="site-menu__item"><a href="#" class="site-menu__link">Производство печатных плат</a></li>
                               <li class="site-menu__item"><a href="#" class="site-menu__link">Монтаж печатных плат</a></li>
                           </ul>
-                          <ul class="site-menu__list site-menu__list--delivery">
+                          <ul class="site-menu__list site-menu__list---delivery">
                               <li class="site-menu__item"><a href="#" class="site-menu__link" >Комплектующие</a></li>
                               <li class="site-menu__item"><a href="#" class="site-menu__link">Доставка</a></li>
                               <li class="site-menu__item"><a href="#" class="site-menu__link">Контакты</a></li>
                           </ul>
-                    </div>
+                      </div>
                   </li>
                   <li class="communication__item site-contacts">
-                      <h4 class="footer__title">Наш офис</h4>
+                      <h4 class="site-contacts__title">Наш офис</h4>
                       <ul class="site-contacts__list">
                           <li class="site-contacts__item"><a href="#" class="site-contacts__link site-contacts__link--adress">г. Мытищи, Олимпийский проспект, д.10</a></li>
                           <li class="site-contacts__item"><a href="+74955894050" class="site-contacts__link">+7 (495) 589-40-50</a></li>

@@ -2,15 +2,14 @@
 .about__wrapper {
   position: relative;
   max-width: 60.7%;
-  padding-left: 180px;
-  padding-bottom: 110px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 53px 3px 109px 180px;
+  margin: 0 auto;
 }
 
 .about__title {
   @include font-condensed-min;
   color: $middlegrey;
+  margin: 0;
   margin-bottom: 15px;
 }
 
@@ -34,7 +33,7 @@
   @include font-condensed-supermax;
   content: "";
   position: absolute;
-  top: 0;
+  top: 55px;
   left: -30px;
   height: 317px;
   width: 150px;
@@ -50,11 +49,9 @@
 }
 
 @media (max-width: $tablet-width) {
-  .about__wrapper {
-    width: 70%;
-    padding-left: 180px;
-    padding-bottom: 80px;
-    margin: 0 25px 40px;
+.about__wrapper {
+    width: 93.75%;
+    padding: 23px 0 81px 190px;
   }
 
   .about__description {
@@ -78,8 +75,8 @@
   .about-wrapper::before {
     content: "";
     position: absolute;
-    top: 22px;
-    left: -25px;
+    top: 0;
+    left: 0;
     width: 244px;
     height: 362px;
     background-image: url("../img/tablet-2005@1x.png");
@@ -95,11 +92,16 @@
 
 @media (max-width: $mobile-width) {
   .about__wrapper {
-    width: 90.6%;
-    padding: 30px 0 65px;
+    max-width: 91%;
+    padding: 30px 0 0;
+    margin: 0 15px;
   }
 
   .about__wrapper::before {
     display: none;
+  }
+
+  .about__btn {
+
   }
 }

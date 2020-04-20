@@ -56,7 +56,6 @@ form.addEventListener('submit', function (evt) {
     }
   }
 });
-pageHeader.classList.remove('page-header--nojs');
 
 document.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {

@@ -6,17 +6,19 @@
 .offers__wrapper {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1170px;
+  max-width: 1200px;
+  padding: 0 20px;
   position: relative;
 }
 
 .offers__title {
   @include font-condensed-min;
-  padding-top: 90px;
-  padding-bottom: 60px;
+  padding-top: 88px;
+  margin-bottom: 52px;
 }
 
 .offers__list {
+  padding: 0;
   padding-bottom: 125px;
   list-style: none;
   display: flex;
@@ -25,21 +27,28 @@
 }
 
 .offers__item {
-  width: 32%;
+  width: 31.6%;
   padding: 0;
+  margin: 0;
 }
 
 .offers__link {
   @include font-condensed-20;
+  font-size: 21px;
+  line-height: 1.4;
   width: 100%;
   height: 620px;
-  padding: 55px 150px 0 35px;
+  padding: 51px 155px 0 35px;
   display: flex;
   position: relative;
   color: $white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  text-decoration: none;
 }
 
-.offers__link::after {
+.offers__link::before {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -52,56 +61,40 @@
   color: $white;
   background-color: $bg-blue;
   z-index: 2;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
 }
 
-.offers__link--boards::after {
+.offers__link--boards {
   background-image: url("../img/services_desktop_board@1x.png");
 }
 
-.offers__link--mount::after {
+.offers__link--mount {
   background-image: url("../img/services_desktop_mount@1x.png");
-  background-position: -296px -36px;
 }
 
-.offers__link--led::after {
+.offers__link--led {
   background-image: url("../img/services_desktop_led@1x.png");
-  background-position: -126px 0;
-}
-
-.offers__img {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 620px;
-  height: 371px;
-  opacity: 0.1;
-  background-size: cover;
-  background-position: 20px 1px;
 }
 
 @media only screen and (min-resolution: 124.8dpi),
   only screen and (min-resolution: 1.3dppx) {
-  .offers__link--boards::after {
-    background-image: url("../img/services_desktop_board@2x.webp");
+  .offers__link--boards {
+    background-image: url("../img/services_desktop_board@2x.png");
   }
 
-  .offers__link--mount::after {
-    background-image: url("../img/services_desktop_mount@2x.webp");
-    background-position: -592px -72px;
+  .offers__link--mount {
+    background-image: url("../img/services_desktop_mount@2x.png");
   }
 
-  .offers__link--led::after {
-    background-image: url("../img/services_desktop_led@2x.webp");
-    background-position: -252px 0;
+  .offers__link--led {
+    background-image: url("../img/services_desktop_led@2x.png");
   }
 }
 
 @media (max-width: $tablet-width) {
+  .offers__wrapper {
+    padding: 0 25px;
+  }
+
   .offers__title {
     font-size: 32px;
     padding: 45px 0;
@@ -121,39 +114,59 @@
     padding-right: 200px;
   }
 
-  .offers__link--boards::before {
-    background-position: -22px 0;
+  .offers__link--boards {
+    background-image: url("../img/services_tablet_board@1x.png");
   }
 
-  .offers__link--mount::before {
-    background-position: -296px -36px;
+  .offers__link--mount {
+    background-image: url("../img/services_tablet_mount@1x.png");
   }
 
-  .offers__link--led::before {
-    top: -126px;
-    left: 0;
-  }
-
-  .offers__img {
-    display: inline;
-    position: absolute;
+  .offers__link--led {
+    background-image: url("../img/services_tablet_led@1x.png");
   }
 
   @media only screen and (min-resolution: 124.8dpi),
     only screen and (min-resolution: 1.3dppx) {
-    .offers__link--boards::before {
-      background-image: url("../img/services_desktop_mount@2x.webp");
-      background-position: -22px 0;
+    .offers__link--boards {
+      background-image: url("../img/services_tablet_board@2x.png");
     }
 
-    .offers__link--mount::before {
-      background-image: url("../img/services_desktop_mount@2x.webp");
-      background-position: -296px -36px;
+    .offers__link--mount {
+      background-image: url("../img/services_tablet_mount@2x.png");
     }
 
-    .offers__link--led::before {
-      background-image: url("../img/services_desktop_led@2x.webp");
-      background-position: -126px 0;
+    .offers__link--led {
+      background-image: url("../img/services_tablet_led@2x.png");
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .offers__link--boards {
+    background-image: url("../img/services_mobile_board@1x.png");
+  }
+
+  .offers__link--mount {
+    background-image: url("../img/services_mobile_mount@1x.png");
+  }
+
+  .offers__link--led {
+    background-image: url("../img/services_mobile_led@1x.png");
+  }
+
+  @media only screen and (min-resolution: 124.8dpi),
+    only screen and (min-resolution: 1.3dppx) {
+    .offers__link--boards {
+      background-image: url("../img/services_mobile_board@2x.png");
+    }
+
+    .offers__link--mount {
+      background-image: url("../img/services_mobile_mount@2x.png");
+    }
+
+    .offers__link--led {
+      background-image: url("../img/services_mobile_led@2x.png");
     }
   }
 }

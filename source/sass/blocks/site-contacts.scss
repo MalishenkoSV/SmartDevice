@@ -1,5 +1,7 @@
-.site-contacs__list {
+.site-contacts__list {
+  @include list-reset;
   display: flex;
+  flex-direction: column;
 }
 
 .site-contacts__item {
@@ -7,7 +9,16 @@
 }
 
 .site-contacts__link {
+  @include font-superbasic;
   text-decoration: none;
   color: $bg-black;
   opacity: 0.5;
+}
+
+.site-contacts__title {
+  @include font-condensed-title;
+  display: block;
+  text-transform: uppercase;
+  margin: 0 0 29px;
+  color: $bg-black;
 }

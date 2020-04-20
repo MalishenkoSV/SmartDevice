@@ -1,27 +1,16 @@
 .communication__list {
-  list-style: none;
+  @include list-reset;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 67px;
   position: relative;
 }
 
-.communication__wripper {
-  width: 74%;
+.communication--wripper {
+  width: 75%;
   margin: 0 auto;
 }
 
-.communication__item {
-  position: relative;
-}
-
-.site-contacts__link {
-  @include font-superbasic;
-  min-width: 333px;
-}
-
 @media (max-width: $tablet-width) {
-  .communication__wripper {
+  .communication--wripper {
     width: 91%;
   }
 
