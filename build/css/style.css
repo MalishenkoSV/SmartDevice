@@ -510,7 +510,7 @@ input[type="radio"].visually-hidden {
   padding: 367px 0 185px;
   position: relative; }
 
-.page-main__color::after {
+.page-main__color::before {
   content: "";
   width: 705px;
   height: 515px;
@@ -586,11 +586,9 @@ input[type="radio"].visually-hidden {
   .page-main__title {
     font-family: "Roboto Condensed", "Tahoma", sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
     margin-bottom: 30px;
     max-width: 470px; }
   .page-main__text {
@@ -624,7 +622,7 @@ input[type="radio"].visually-hidden {
     margin-left: 8.5%; } }
 
 @media (max-width: 767px) {
-  page-main__screen {
+  .page-main__screen {
     padding: 0; }
   .page-main__color {
     padding: 145px 3.2% 90px; }
