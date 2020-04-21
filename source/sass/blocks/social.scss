@@ -1,7 +1,7 @@
 .social {
   width: 15%;
   margin-bottom: 45px;
-  margin-right: 11%;
+  margin-right: 15.5%;
   display: flex;
   flex-direction: column;
 }
@@ -45,7 +45,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 5% 54px;
-    border-bottom: 1px solid rgba(98,105,98, .2);
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
 
   .social__link {
@@ -61,28 +61,28 @@
   .social__list {
     padding-top: 12px;
     margin: 0;
-   }
+  }
 }
 
 @media (max-width: $mobile-width) {
-   .social {
-     flex-direction: column;
-     padding: 0 14% 26px;
-     text-align: center;
-   }
+  .social {
+    flex-direction: column;
+    padding: 0 14% 26px;
+    text-align: center;
+  }
 
-   .social__logo {
-     margin-bottom: 26px;
-   }
+  .social__logo {
+    margin-bottom: 26px;
+  }
 
-   .social__service-years {
-     @include font-supermin;
-     margin: 0;
-     margin-bottom: 31px;
-   }
+  .social__service-years {
+    @include font-supermin;
+    margin: 0;
+    margin-bottom: 31px;
+  }
 
-   .social__list {
+  .social__list {
     padding: 0 32.5%;
     margin-top: 0;
-   }
+  }
 }

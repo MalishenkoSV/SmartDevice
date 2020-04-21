@@ -10,7 +10,7 @@
   @include font-condensed-min;
   color: $middlegrey;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .about__description {
@@ -30,7 +30,6 @@
 }
 
 .about__wrapper::before {
-  @include font-condensed-supermax;
   content: "";
   position: absolute;
   top: 55px;
@@ -39,28 +38,34 @@
   width: 150px;
   background-image: url("../img/2005.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .about-wrapper::before {
     background-image: url("../img/2005@2x.png");
-    background-size: 220px 317px;
   }
 }
 
 @media (max-width: $tablet-width) {
-.about__wrapper {
-    width: 93.75%;
-    padding: 23px 0 81px 190px;
+  about__wrapper {
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 20px 83px 212px;
+  }
+
+  .about__title {
+    font-size: 32px;
+    margin: 0 0 20px;
   }
 
   .about__description {
-    color: $middlegrey;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .about__description--two {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
 
@@ -72,9 +77,7 @@
     display: inline;
   }
 
-  .about-wrapper::before {
-    content: "";
-    position: absolute;
+  .about__wrapper::before {
     top: 0;
     left: 0;
     width: 244px;
@@ -83,9 +86,8 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .about-wrapper::before {
+    .about__wrapper::before {
       background-image: url("../img/tablet-2005@2x.png");
-      background-size: 244px 362px;
     }
   }
 }
@@ -96,8 +98,8 @@
   }
 
   .about__wrapper {
-    max-width: 91%;
-    padding: 30px 0 0;
+    // max-width: 91%;
+    padding: 0;
     margin: 0 15px 0 17px;
   }
 
@@ -105,7 +107,22 @@
     display: none;
   }
 
+  .about__title {
+    font-size: 27px;
+    margin: 0 0 17px;
+  }
+
+  .about__description {
+    margin-bottom: 47px;
+    line-height: 21px;
+    letter-spacing: normal;
+  }
+
+  .about__description--two {
+    margin-bottom: 33px;
+  }
+
   .about__btn {
-    margin-bottom: 65px;
+    margin-bottom: 64px;
   }
 }

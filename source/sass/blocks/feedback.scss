@@ -1,9 +1,8 @@
 .feedback {
   background-color: $bg-blue;
   padding-top: 90px;
-  padding-bottom: 113px;
+  padding-bottom: 72px;
   line-height: 12px;
-  margin-bottom: 60px;
 }
 
 .feedback__container {
@@ -72,11 +71,11 @@
 }
 
 @media (max-width: $mobile-width) {
-.feedback__title {
+  .feedback__title {
     line-height: 1.4;
     font-size: 28px;
     margin: 15px 0 14px;
-}
+  }
 
   .feedback__text {
     margin-bottom: 24px;

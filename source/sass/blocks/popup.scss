@@ -1,3 +1,9 @@
+
+
+.overlay {
+  display: none;
+}
+
 .popup {
   position: fixed;
   max-width: 490px;
@@ -78,17 +84,20 @@
 }
 
 .pop-up-overlay {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  width: auto;
+  height: auto;
   background-color: rgba(92, 110, 100, 0.5);
   z-index: 100;
   filter: blur(10px);
 }
 
-.modal__error {
+.popup__error {
   animation-name: shake;
   animation-duration: 0.6s;
 }

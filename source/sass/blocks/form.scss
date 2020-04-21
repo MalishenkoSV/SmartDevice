@@ -5,14 +5,14 @@
 
 .form input,
 .form textarea {
-  color: $white;
-  opacity: 0.1;
+  background-color: $opasity-white;
   border: none;
   align-items: stretch;
   padding: 15px;
   margin-bottom: 40px;
   border-radius: 0;
 }
+
 .form input,
 .form button,
 .form label {
@@ -34,7 +34,7 @@
   @include font-condensed-btn;
   color: #ffffff;
   margin-bottom: 40px;
-  padding: 15px 79px;
+  padding: 15px;
   background-color: inherit;
   border: 1px solid $white;
   border-radius: 3px;
@@ -116,6 +116,7 @@ input[type="checkbox"]:checked + label::after {
     width: 100%;
     margin-bottom: 18px;
   }
+
   .form input[type="checkbox"] ~ label {
     width: 100%;
     margin-bottom: 26px;

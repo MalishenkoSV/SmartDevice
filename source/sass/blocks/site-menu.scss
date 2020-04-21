@@ -1,5 +1,5 @@
 .site-menu {
-  width: 520px;
+  width: 22%;
   display: flex;
   flex-direction: column;
   margin-right: 8%;
@@ -25,7 +25,7 @@
 }
 
 .site-menu__list--about {
-   width: 53%;
+  width: 53%;
 }
 
 .site-menu__item {
@@ -38,7 +38,6 @@
   text-decoration: none;
   color: $bg-black;
   opacity: 0.5;
-
 }
 
 @media (max-width: $tablet-width) {
@@ -67,7 +66,7 @@
     padding-left: 3.13%;
     padding-top: 29px;
     margin-bottom: 21px;
-    border-bottom: 1px solid rgba(98,105,98, .2);
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
 
   .site-menu__link {

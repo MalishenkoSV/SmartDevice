@@ -65,19 +65,28 @@
 }
 
 @media (max-width: $tablet-width) {
+  .attribute {
+    padding: 73px 0 25px;
+  }
+
   .attribute__list {
-    width: 94%;
-    justify-content: space-around;
-    margin-bottom: 30px;
+    width: 100%;
+    padding: 0 25px;
+    margin-bottom: 0;
   }
 
   .attribute__item {
-    width: 45%;
+    width: 48%;
+    min-height: 232px;
+    padding: 10px 18px 10px 22px;
   }
 
-  .attribute__wripper {
-    margin-left: 25px;
-    margin-right: 25px;
+  .attribute__title {
+    margin-bottom: 4px;
+  }
+
+  .attribute__text {
+    margin-top: 4px;
   }
 }
 
@@ -85,13 +94,14 @@
   .attribute {
     padding-top: 37px;
     padding-bottom: 0;
+    padding: 0;
   }
 
   .attribute__list {
-    width: 90.6%;
-    flex-direction: column;
-    margin-bottom: 30px;
-  }
+    width: 100%;
+    padding: 38px 14px 22px;
+    margin-bottom: 0;
+}
 
   .attribute__wripper {
       margin-left: 15px;
@@ -102,7 +112,8 @@
     margin-bottom: 20px;
     min-height: auto;
     width: 100%;
-  }
+    padding: 10px 14px 10px 24px;
+}
 
   .attribute__title {
     @include font-condensed-20;

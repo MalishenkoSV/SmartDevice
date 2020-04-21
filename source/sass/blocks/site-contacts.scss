@@ -1,5 +1,6 @@
 .site-contacts {
-  width: 24%;
+  width: 25%;
+  margin-right: 12.5%;
 }
 
 .site-contacts__list {
@@ -48,6 +49,7 @@
     @include font-superbasic;
   }
 }
+
 @media (max-width: $mobile-width) {
   .site-contacts {
     padding-top: 38px;

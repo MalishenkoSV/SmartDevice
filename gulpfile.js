@@ -1,3 +1,4 @@
+
 "use strict";
 
 var gulp = require("gulp");
@@ -15,6 +16,8 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var concat = require("gulp-concat");
+
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -100,5 +103,17 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task('concat-js-main', function () {
+  return gulp.src('source/js/main-*.js')
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('concat-js-vendor', function () {
+  return gulp.src('source/js/vendor-*.js')
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('build/js'));
+});
+
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "concat-js-main", "concat-js-vendor"));
 gulp.task("start", gulp.series("build", "server"));

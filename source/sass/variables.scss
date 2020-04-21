@@ -11,8 +11,8 @@ $ss-grey: #cdcdcd;
 $grey:#788891;
 $border-grey:#626962;
 $ac-grey: #c4c4c4;
-
-$opacity-border: 1px solid rgba(98,105,98,0.2);
+$opasity-white: rgba(255, 255, 255, 0.1);
+$opacity-border: 1px solid rgba(98, 105, 98, 0.2);
 $mobile-width: 767px;
 $tablet-width: 1023px;
 $transition-duration: 0.3s;
@@ -121,7 +121,7 @@ $retina-dppx: 1.5dppx;
   line-height: 140%;
 }
 
-@mixin font-condensed-min {
+@mixin font-condensed-medium {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -139,7 +139,7 @@ $retina-dppx: 1.5dppx;
   text-transform: uppercase;
 }
 
-@mixin font-condensed-medium {
+@mixin font-condensed-medium-big {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: bold;

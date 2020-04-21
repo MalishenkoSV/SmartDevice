@@ -12,13 +12,13 @@
 }
 
 .offers__title {
-  @include font-condensed-min;
-  padding-top: 88px;
+  @include font-condensed-medium;
+  padding-top: 41px;
   margin: 0;
 }
 
 .offers__list {
-  padding: 0 0 125px;
+  padding: 0 0 131px;
   margin: 50px 0 0;
   list-style: none;
   display: flex;
@@ -49,11 +49,11 @@
 }
 
 .offers__link::before {
+  content: ">";
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  content: ">";
   width: 63px;
   height: 63px;
   bottom: 0;
@@ -97,9 +97,8 @@
   }
 
   .offers__title {
-    font-size: 32px;
+    @include font-condensed-min;
     padding: 25px 0 49px;
-    line-height: 141.62%;
   }
 
   .offers__item {
@@ -115,7 +114,7 @@
 
   .offers__link {
     height: 256px;
-    padding:40px 66% 40px 45px;
+    padding: 40px 66% 40px 45px;
   }
 
   .offers__link--boards {
@@ -152,10 +151,9 @@
   }
 
   .offers__title {
-    font-size: 32px;
+    @include font-condensed-popup;
     padding: 37px 0 43px 10px;
     line-height: 141.62%;
-    font-size: 27px;
   }
 
   .offers__item {
@@ -166,6 +164,7 @@
     font-size: 20px;
     padding: 21px 36% 40px 35px;
   }
+
   .offers__link--boards {
     background-image: url("../img/services_mobile_board@1x.png");
   }
