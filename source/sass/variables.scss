@@ -29,6 +29,16 @@ $retina-dppx: 1.5dppx;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  letter-spacing:  0.64px;
+}
+
+@mixin font-superbas {
+  font-family: "PT Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.48px;
 }
 
 @mixin font-superbasic {
@@ -70,7 +80,7 @@ $retina-dppx: 1.5dppx;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.64px;
   text-transform: uppercase;
 }
 
@@ -80,6 +90,7 @@ $retina-dppx: 1.5dppx;
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0.8px;
 }
 
 @mixin font-condensed-basic {
@@ -88,6 +99,7 @@ $retina-dppx: 1.5dppx;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
+  letter-spacing: 0.8px;
 }
 
 @mixin font-condensed-20 {
@@ -135,7 +147,7 @@ $retina-dppx: 1.5dppx;
   font-weight: bold;
   font-size: 40px;
   line-height: 47px;
-  letter-spacing: 0.07em;
+  letter-spacing: 1.12px;
   text-transform: uppercase;
 }
 
@@ -145,7 +157,7 @@ $retina-dppx: 1.5dppx;
   font-weight: bold;
   font-size: 60px;
   line-height: 70px;
-  letter-spacing: 0.07em;
+  letter-spacing: 1.12px;
   text-transform: uppercase;
 }
 
@@ -155,7 +167,7 @@ $retina-dppx: 1.5dppx;
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.07em;
+  letter-spacing: 1.12px;
   text-transform: uppercase;
 }
 

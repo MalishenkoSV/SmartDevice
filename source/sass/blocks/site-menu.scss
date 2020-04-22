@@ -32,7 +32,8 @@
   margin-right: 6%;
 }
 
-site-menu__list--delivery {
+.site-menu__list--delivery {
+  @include font-superbas;
   width: 208px;
 }
 
@@ -91,4 +92,7 @@ site-menu__list--delivery {
     @include font-superbasic;
   }
 
+  .site-menu__list--delivery {
+    @include font-superbas;
+  }
 }

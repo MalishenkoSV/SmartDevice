@@ -336,7 +336,6 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: 0.01em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #cdcdcd;
@@ -486,7 +485,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.07em;
+  letter-spacing: 1.12px;
   text-transform: uppercase;
   text-transform: uppercase;
   margin-bottom: 27px;
@@ -552,6 +551,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
+  letter-spacing: 0.8px;
   width: 407px;
   text-align: center;
   padding: 17px 28px 14px;
@@ -589,7 +589,7 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     font-size: 60px;
     line-height: 70px;
-    letter-spacing: 0.07em;
+    letter-spacing: 1.12px;
     text-transform: uppercase;
     margin-bottom: 30px;
     max-width: 470px; }
@@ -639,7 +639,7 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     font-size: 40px;
     line-height: 47px;
-    letter-spacing: 0.07em;
+    letter-spacing: 1.12px;
     text-transform: uppercase;
     padding: 0;
     margin-bottom: 27px; }
@@ -679,6 +679,7 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
+    letter-spacing: 0.8px;
     display: inline-block;
     font-size: 17px;
     text-transform: uppercase;
@@ -750,7 +751,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.64px;
   text-transform: uppercase;
   width: 180px;
   height: 45px;
@@ -1234,7 +1235,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.64px;
   text-transform: uppercase;
   color: #00b2ff;
   border: #00b2ff 1px solid;
@@ -1364,7 +1365,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.64px;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 40px;
@@ -1447,6 +1448,7 @@ input[type="checkbox"]:checked + label::after {
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1466,7 +1468,7 @@ input[type="checkbox"]:checked + label::after {
 
 .communication {
   border-bottom: 1px solid 1px solid rgba(98, 105, 98, 0.2);
-  width: 1370px;
+  max-width: 1370px;
   margin: 0 auto; }
 
 .communication__list {
@@ -1549,6 +1551,7 @@ input[type="checkbox"]:checked + label::after {
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   margin: 0;
   margin-right: 29px;
@@ -1579,7 +1582,13 @@ input[type="checkbox"]:checked + label::after {
   width: 60%;
   margin-right: 6%; }
 
-site-menu__list--delivery {
+.site-menu__list--delivery {
+  font-family: "PT Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.48px;
   width: 208px; }
 
 .site-menu__item {
@@ -1615,6 +1624,7 @@ site-menu__list--delivery {
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
+    letter-spacing: 0.8px;
     margin-bottom: 26px; }
   .site-menu__item {
     margin-bottom: 3px; } }
@@ -1632,7 +1642,14 @@ site-menu__list--delivery {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
-    line-height: 25px; } }
+    line-height: 25px; }
+  .site-menu__list--delivery {
+    font-family: "PT Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.48px; } }
 
 .site-contacts {
   width: 25%;
@@ -1670,6 +1687,7 @@ site-menu__list--delivery {
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0.8px;
   display: block;
   text-transform: uppercase;
   margin: 0 0 29px;
@@ -1692,6 +1710,7 @@ site-menu__list--delivery {
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
+    letter-spacing: 0.8px;
     margin-bottom: 25px; }
   .site-contacts__link {
     font-family: "PT Mono", monospace;
@@ -1808,6 +1827,7 @@ site-menu__list--delivery {
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
+    letter-spacing: 0.64px;
     margin: 0;
     margin-bottom: 31px; }
   .social__list {
@@ -1888,6 +1908,7 @@ site-menu__list--delivery {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  letter-spacing: 0.64px;
   padding: 14px 0;
   color: #1b2d37;
   text-transform: uppercase;
