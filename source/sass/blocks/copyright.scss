@@ -37,6 +37,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .copyrights {
+    padding: 28px 25px 24px;
+  }
+
   .copyrights__list {
     flex-direction: column;
     align-items: center;

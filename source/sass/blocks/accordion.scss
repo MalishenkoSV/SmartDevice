@@ -1,10 +1,11 @@
 @media (max-width: $mobile-width) {
   .accordion-btn {
-    position: relative;
+    position: absolute;
     width: 16px;
     height: 16px;
+    right: 5%;
     padding: 0;
-
+    top: 28px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -49,6 +50,10 @@
     &--on + nav,
     &--on + ul {
       display: flex;
+    }
+
+    &--on + ul {
+      padding-top: 31px;
     }
   }
 }

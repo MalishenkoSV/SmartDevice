@@ -93,17 +93,17 @@
 @media (max-width: $tablet-width) {
   .offers__wrapper {
     padding: 25px;
-    padding-bottom: 35px;
+    padding-bottom: 32px;
   }
 
   .offers__title {
     @include font-condensed-min;
-    padding: 25px 0 49px;
+    padding: 25px 0 51px;
   }
 
   .offers__item {
     width: 100%;
-    padding-bottom: 45px;
+    padding-bottom: 46px;
   }
 
   .offers__list {
@@ -147,12 +147,12 @@
 
 @media (max-width: $mobile-width) {
   .offers__wrapper {
-    padding: 15px 15px 35px;
+    padding: 15px 15px 34px;
   }
 
   .offers__title {
     @include font-condensed-popup;
-    padding: 37px 0 43px 10px;
+    padding: 37px 0 40px 10px;
     line-height: 141.62%;
   }
 

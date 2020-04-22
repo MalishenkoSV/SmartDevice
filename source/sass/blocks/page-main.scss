@@ -51,7 +51,6 @@
 
 .page-main__wrapper {
   position: relative;
-  // margin-top: 179px;
 }
 
 .page-main__text {
@@ -108,7 +107,7 @@
   }
 
   .page-main__title {
-    @include font-condensed-medium;
+    @include font-condensed-medium-big;
     margin-bottom: 30px;
     max-width: 470px;
   }

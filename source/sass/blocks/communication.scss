@@ -19,7 +19,12 @@
 }
 
 @media (max-width: $tablet-width) {
+  .communication {
+    width: 100%;
+  }
+
   .communication__list {
+    padding: 19px 0 22px;
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
@@ -33,11 +38,19 @@
   }
 
   .communication__list {
+    position: relative;
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
     padding-top: 46px;
+    padding-bottom: 0;
+  }
+
+  .communication__item {
+    position: relative;
+    margin: 0;
+    padding: 20px;
   }
 
   .communication__accordion-btn {

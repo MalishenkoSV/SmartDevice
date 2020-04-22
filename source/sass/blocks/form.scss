@@ -28,6 +28,7 @@
 .form textarea {
   width: 100%;
   height: 154px;
+  resize: none;
 }
 
 .form button {
@@ -97,7 +98,7 @@ input[type="checkbox"]:checked + label::after {
   }
 
   .form button {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 }
 

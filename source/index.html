@@ -135,12 +135,12 @@
                     <h4 class="feedback__title">Остались вопросы? Задайте их нам!</h4>
                     <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
                     <form method="post" class="feedback__form form"  action="https://echo.htmlacademy.ru" autocomplete="on" name="consulting_form" id="consulting_form" accept-charset="utf-8">
-                        <input id="form-name" class="form__text form__text--name" required form="consulting_form"  type="text" name="feedback_form_name" placeholder="Имя">
-                        <input id="feedback-tel" class="form__text form__text--tel" required form="consulting_form"  type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон">
+                        <input id="form-name" required form="consulting_form"  type="text" name="feedback_form_name" placeholder="Имя">
+                        <input id="feedback-tel" required form="consulting_form"  type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон">
                         <textarea  id="feedback-question" class="form__text form__text--textarea" form="consulting_form" name="feedback_form_question" rows="5" placeholder="Ваш вопрос"></textarea>
-                        <button cass="form__btn" type="submit">Задать вопрос</button>
-                        <input cass="form__chkbx" type="checkbox" form="consulting_form" name="agree" id="feedback_form_data_process" checked>
-                        <label class="form__data-process" for="feedback_form_data_process">Я согласен на обработку персональных данных</label>
+                        <button type="submit">Задать вопрос</button>
+                        <input type="checkbox" form="consulting_form" name="agree" id="feedback_form_data_process" checked>
+                        <label for="feedback_form_data_process">Я согласен на обработку персональных данных</label>
                     </form>
                 </div>
             </section>
@@ -222,12 +222,12 @@
                 <b class="popup__title">Закажите звонок</b>
                 <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
                 <form method="post" class="popup__form form" action="https://echo.htmlacademy.ru" autocomplete="on" name="popup-form"     id="popup_form" accept-charset="utf-8">
-                    <input class="form__text form__text_name" required form="popup_form" id="popup-name" type="text" name="name" placeholder="Имя">
-                    <input class="form__text form__text_tel" required form="popup_form" id="popup-tel" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="10" placeholder="Телефон">
-                    <textarea class="form__text form__text_textarea" form="popup_form" id="popup-question" name="question" rows="3" placeholder="Ваш вопрос"></textarea>
-                    <button class="form__btn" type="submit">Отправить</button>
-                    <input class="form__chkbx" type="checkbox" form="popup_form" name="agree" id="popup_form_data_process" checked>
-                    <label class="form__data-process" for="popup_form_data_process">Я согласен на обработку персональных данных</label>
+                    <input required form="popup_form" id="popup-name" type="text" name="name" placeholder="Имя">
+                    <input required form="popup_form" id="popup-tel" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="10" placeholder="Телефон">
+                    <textarea form="popup_form" id="popup-question" name="question" rows="3" placeholder="Ваш вопрос"></textarea>
+                    <button type="submit">Отправить</button>
+                    <input type="checkbox" form="popup_form" name="agree" id="popup_form_data_process" checked>
+                    <label for="popup_form_data_process">Я согласен на обработку персональных данных</label>
                 </form>
             </div>
         </section>
