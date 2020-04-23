@@ -41,7 +41,7 @@
   width: 705px;
   height: 515px;
   position: absolute;
-  background-image: url("../img/boardview@1x.png");
+  background-image: url("../img/main.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,7 +162,8 @@
   }
 
   .page-main__color {
-    padding: 145px 3.2% 90px;
+    // padding: 145px 3.2% 90px;
+    padding: 267px 5% 0;
   }
 
   .page-main__color::before {
@@ -189,11 +190,6 @@
   .page-main__text::before {
     top: 15px;
     left: 3px;
-  }
-
-  .page-main__color {
-    padding: 0;
-    padding: 267px 5% 0;
   }
 
   .page-main__color::after {

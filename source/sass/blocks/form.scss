@@ -5,6 +5,7 @@
 
 .form input,
 .form textarea {
+  color: $white;
   background-color: $opasity-white;
   border: none;
   align-items: stretch;
@@ -47,6 +48,7 @@
   padding-left: 35px;
   font-size: 14px;
   color: $white;
+  opacity: 0.8;
 }
 
 .form input[type="checkbox"] {

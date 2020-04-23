@@ -29,20 +29,20 @@
   &:hover {
     background-color: $bg-blue;
   }
+
   &:focus {
     background-color: $bg-blue;
   }
 }
 
 .attribute__item:hover .attribute__text,
-.attribute__item:hover .attribute__title  {
-    color: $white;
+.attribute__item:hover .attribute__title {
+  color: $white;
 }
 
 .attribute__item svg {
   display: block;
   margin-bottom: 20px;
-
   fill: $bg-blue;
 }
 
@@ -92,20 +92,18 @@
 
 @media (max-width: $mobile-width) {
   .attribute {
-    padding-top: 37px;
-    padding-bottom: 0;
-    padding: 0;
+    padding-top: 37px 0 0;
   }
 
   .attribute__list {
     width: 100%;
     padding: 38px 14px 22px;
     margin-bottom: 0;
-}
+  }
 
   .attribute__wripper {
-      margin-left: 15px;
-      margin-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .attribute__item {
@@ -113,7 +111,7 @@
     min-height: auto;
     width: 100%;
     padding: 10px 14px 10px 24px;
-}
+  }
 
   .attribute__title {
     @include font-condensed-20;

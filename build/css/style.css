@@ -485,7 +485,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 1.12px;
+  letter-spacing: 5.2px;
   text-transform: uppercase;
   text-transform: uppercase;
   margin-bottom: 27px;
@@ -514,7 +514,7 @@ input[type="radio"].visually-hidden {
   width: 705px;
   height: 515px;
   position: absolute;
-  background-image: url("../img/boardview@1x.png");
+  background-image: url("../img/main.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -627,7 +627,7 @@ input[type="radio"].visually-hidden {
   .page-main__screen {
     padding: 0; }
   .page-main__color {
-    padding: 145px 3.2% 90px; }
+    padding: 267px 5% 0; }
   .page-main__color::before {
     width: 302px;
     height: 246px;
@@ -652,9 +652,6 @@ input[type="radio"].visually-hidden {
   .page-main__text::before {
     top: 15px;
     left: 3px; }
-  .page-main__color {
-    padding: 0;
-    padding: 267px 5% 0; }
   .page-main__color::after {
     width: 301px;
     height: 220px;
@@ -936,9 +933,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .attribute {
-    padding-top: 37px;
-    padding-bottom: 0;
-    padding: 0; }
+    padding-top: 37px 0 0; }
   .attribute__list {
     width: 100%;
     padding: 38px 14px 22px;
@@ -1314,6 +1309,7 @@ input[type="radio"].visually-hidden {
 
 .form input,
 .form textarea {
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   -webkit-box-align: stretch;
@@ -1379,7 +1375,8 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   padding-left: 35px;
   font-size: 14px;
-  color: #ffffff; }
+  color: #ffffff;
+  opacity: 0.8; }
 
 .form input[type="checkbox"] {
   display: none; }
@@ -1796,19 +1793,18 @@ input[type="checkbox"]:checked + label::after {
   .social__service-years {
     display: block;
     color: #1b2d37;
-    opacity: 0.5; }
+    opacity: 0.5;
+    font-size: 13px;
+    margin-top: 18px;
+    text-transform: uppercase;
+    margin-left: 3%; }
   .social__list {
     padding-top: 12px;
     margin: 0;
     width: auto; }
   .social__item {
     margin-left: 15px;
-    margin-right: 0; }
-  .social__service-years {
-    font-size: 13px;
-    margin-top: 18px;
-    text-transform: uppercase;
-    margin-left: 3%; } }
+    margin-right: 0; } }
 
 @media (max-width: 767px) {
   .social {
