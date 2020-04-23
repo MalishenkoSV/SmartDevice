@@ -73,11 +73,11 @@ input[type="checkbox"]:checked + label {
 input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
-  top: 17px;
-  left: 13px;
+  top: 18px;
+  left: 14px;
   width: 10px;
   height: 10px;
-  background: url("../img/chbox.svg") no-repeat;
+  background: url("../img/check-mark.svg") no-repeat;
 }
 
 @media (max-width: $tablet-width) {

@@ -8,9 +8,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  width: 61%;
+  max-width: 1230px;
+  padding: 0 30px;
   margin: 0 auto;
-  padding: 0;
 }
 
 .attribute__item {
@@ -46,7 +46,8 @@
   fill: $bg-blue;
 }
 
-.attribute__item:hover:focus svg {
+.attribute__item:hover svg,
+.attribute__item:focus svg {
   fill: $white;
 }
 

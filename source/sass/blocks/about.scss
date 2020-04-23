@@ -37,7 +37,7 @@
   width: 150px;
   background-image: url("../img/2005.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -97,7 +97,6 @@
   }
 
   .about__wrapper {
-    // max-width: 91%;
     padding: 0;
     margin: 0 15px 0 17px;
   }

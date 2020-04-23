@@ -1,12 +1,8 @@
-.nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .nav__item {
@@ -17,7 +13,7 @@
 
 .nav__link {
   position: relative;
-  padding-left: 40px;
+  display: inline-block;
 }
 
 .nav__link::before {
@@ -29,23 +25,36 @@
 }
 
 .nav__link--tel::before {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   background-image: url("../img/icon-phone.svg");
 }
 
 .nav__link--mail::before {
-  width: 18px;
-  height: 18px;
+  width: 25.33px;
+  height: 18.67px;
   background-image: url("../img/icon-mail.svg");
 }
 
 .nav__item--tel {
-  margin-left: 65px;
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.nav__item--mail {
+  padding-top: 12px;
 }
 
 .nav__item--btn {
-  margin-left: 50px;
+  margin-left: 58px;
+}
+
+.nav__link--mail {
+  padding-left: 49px;
+}
+
+.nav__link--tel {
+  padding-left: 41px;
 }
 
 .nav__link--mail,
@@ -97,6 +106,12 @@
 
 @media (max-width: $tablet-width) {
   .nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .nav {
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -137,8 +152,8 @@
   }
 
   .nav__link--mail::before {
-    width: 25px;
-    height: 19px;
+    width: 25.33px;
+    height: 18.67px;
     left: 11px;
     top: -2px;
   }

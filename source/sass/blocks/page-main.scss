@@ -11,8 +11,8 @@
   padding: 0 30px;
   background-color: $bg-black;
   background-image: url("../img/maska1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .page-main__title {
@@ -41,12 +41,18 @@
   width: 705px;
   height: 515px;
   position: absolute;
-  background-image: url("../img/main.png");
+  background-image: url("../img/main@1x.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   top: 390px;
   right: -75px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-main__color::before {
+      background-image: url("../img/main@2x.png");
+    }
+  }
 }
 
 .page-main__wrapper {
@@ -139,9 +145,15 @@
   .page-main__color::before {
     width: 465px;
     height: 340px;
-    background-size: 100%;
+    background-image: url("../img/main-tablet@1x.png");
     top: 131px;
     right: -235px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .page-main__color::before {
+        background-image: url("../img/main-tablet@2x.png");
+      }
+    }
   }
 
   .page-main__maska {
@@ -162,7 +174,6 @@
   }
 
   .page-main__color {
-    // padding: 145px 3.2% 90px;
     padding: 267px 5% 0;
   }
 
@@ -171,6 +182,13 @@
     height: 246px;
     top: 113px;
     right: -8px;
+    background-image: url("../img/main-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .page-main__color::before {
+        background-image: url("../img/main-mobile@2x.png");
+      }
+    }
   }
 
   .page-main__title {
@@ -223,7 +241,6 @@
   .page-main__advice-mobile {
     @include font-condensed-basic;
     display: inline-block;
-    // padding: 17px 11px;
     font-size: 17px;
     text-transform: uppercase;
     text-align: center;
