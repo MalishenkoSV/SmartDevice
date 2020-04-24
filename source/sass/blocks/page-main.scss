@@ -62,7 +62,7 @@
 .page-main__text {
   @include font-medium;
   padding-left: 95px;
-  margin: 0 0 45px;
+  margin: 0 0 44px;
   max-width: 778px;
   position: relative;
   z-index: 2;
@@ -82,8 +82,8 @@
   @include font-condensed-basic;
   width: 407px;
   text-align: center;
-  padding: 17px 28px 14px;
-  margin-left: 6.5%;
+  padding: 17px 28px;
+  margin-left: 6.65%;
   margin-bottom: 93px;
   text-transform: uppercase;
   background-color: $bg-blue;
@@ -116,6 +116,8 @@
     @include font-condensed-medium-big;
     margin-bottom: 30px;
     max-width: 470px;
+    margin-top: 40px;
+    margin-bottom: 28px;
   }
 
   .page-main__text {
@@ -125,6 +127,10 @@
     margin-bottom: 55px;
     padding-left: 50px;
     width: 67%;
+  }
+
+  .page-main__screen {
+    padding-bottom: 18px;
   }
 
   .page-main__scroll {
@@ -165,6 +171,7 @@
     line-height: 1.4;
     width: 379px;
     margin-left: 8.5%;
+    padding: 14px 28px;
   }
 }
 
@@ -178,10 +185,10 @@
   }
 
   .page-main__color::before {
-    width: 302px;
-    height: 246px;
+    width: 301px;
+    height: 220px;
     top: 113px;
-    right: -8px;
+    right: -6px;
     background-image: url("../img/main-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -232,10 +239,8 @@
   }
 
   .page-main__btn {
-    width: 100%;
-    min-width: 256px;
     margin: 0 0 70px;
-    padding: 15px 28px 15px;
+    padding: 14px 11px 11px;
   }
 
   .page-main__advice-mobile {

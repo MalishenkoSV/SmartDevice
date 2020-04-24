@@ -99,7 +99,7 @@ $retina-dppx: 1.5dppx;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.05em;
 }
 
 @mixin font-condensed-20 {
@@ -147,7 +147,7 @@ $retina-dppx: 1.5dppx;
   font-weight: bold;
   font-size: 40px;
   line-height: 47px;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
 }
 
@@ -157,7 +157,7 @@ $retina-dppx: 1.5dppx;
   font-weight: bold;
   font-size: 60px;
   line-height: 70px;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
 }
 
@@ -167,7 +167,7 @@ $retina-dppx: 1.5dppx;
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 5.2px;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
 }
 
