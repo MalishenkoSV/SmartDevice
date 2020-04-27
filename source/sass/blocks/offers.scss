@@ -13,12 +13,12 @@
 
 .offers__title {
   @include font-condensed-medium;
-  padding-top: 41px;
+  padding-top: 40px;
   margin: 0;
 }
 
 .offers__list {
-  padding: 0 0 131px;
+  padding: 0 0 127px;
   margin: 50px 0 0;
   list-style: none;
   display: flex;
@@ -46,6 +46,12 @@
   background-size: contain;
   background-position: 0 0;
   text-decoration: none;
+  background-color: $bg-black;
+}
+
+.offers__link:hover,
+.offers__link:focus {
+  box-shadow: 0 0 0 2px $white;
 }
 
 .offers__link::before {
@@ -76,6 +82,7 @@
 
 .offers__link--led {
   background-image: url("../img/services_desktop_led@1x.png");
+  background-size: cover;
 }
 
 @media only screen and (min-resolution: 124.8dpi),
@@ -90,18 +97,18 @@
 
   .offers__link--led {
     background-image: url("../img/services_desktop_led@2x.png");
+    background-size: cover;
   }
 }
 
 @media (max-width: $tablet-width) {
   .offers__wrapper {
-    padding: 25px;
-    padding-bottom: 32px;
+    padding: 25px 24px 32px 26px;
   }
 
   .offers__title {
     @include font-condensed-min;
-    padding: 25px 0 51px;
+    padding: 25px 100px 51px 0;
   }
 
   .offers__item {
@@ -116,8 +123,16 @@
   }
 
   .offers__link {
+    font-size: 20px;
+    line-height: 30px;
     height: 256px;
-    padding: 40px 66% 40px 45px;
+    padding: 40px 70% 40px 45px;
+  }
+
+
+  .offers__link::before {
+    bottom: 0;
+    background-position: calc(50% + 2px) 50%;
   }
 
   .offers__link--boards {
@@ -165,7 +180,12 @@
 
   .offers__link {
     font-size: 20px;
-    padding: 21px 36% 40px 35px;
+    padding: 21px 35% 40px 35px;
+  }
+
+  .offers__link::before {
+    bottom: 0;
+    background-position: 50%;
   }
 
   .offers__link--boards {

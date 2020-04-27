@@ -1,7 +1,7 @@
 .feedback {
   background-color: $bg-blue;
-  padding-top: 90px;
-  padding-bottom: 72px;
+  padding-top: 93px;
+  padding-bottom: 74px;
   line-height: 12px;
 }
 
@@ -18,14 +18,14 @@
 
 .feedback__title {
   @include font-condensed-min;
-  margin: 0 0 15px;
+  margin: 0 0 13px;
   color: #ffffff;
   font-size: 35px;
 }
 
 .feedback__text {
   color: #ffffff;
-  margin: 15px 0 55px;
+  margin: 3px 0 54px;
   line-height: 16px;
 }
 
@@ -35,10 +35,10 @@
   background-image: url("../img/paper_airplane_3d_model@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 515px;
-  height: 289px;
-  top: calc(50% - 183px);
-  left: -11px;
+  width: 509px;
+  height: 288px;
+  top: calc(50% - 184px);
+  left: -8px;
 
   @media only screen and (min-resolution: 124.8dpi),
     only screen and (min-resolution: 1.3dppx) {
@@ -58,6 +58,7 @@
 
   .feedback__title {
     font-size: 32px;
+    margin-left: -4px;
     margin-bottom: 13px;
   }
 
@@ -67,7 +68,7 @@
   }
 
   .feedback__container {
-    padding: 80px 90px;
+    padding: 80px 87px 80px 92px;
   }
 
   .feedback__container::before {

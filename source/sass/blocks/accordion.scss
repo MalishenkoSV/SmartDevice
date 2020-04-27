@@ -56,4 +56,11 @@
       padding-top: 31px;
     }
   }
+
+  .accordion-btn__show + nav,
+  .accordion-btn__show + ul {
+    display: flex;
+    margin-top: 31px;
+    margin-right: 10px;
+  }
 }

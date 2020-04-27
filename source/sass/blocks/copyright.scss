@@ -1,3 +1,8 @@
+.copyrights {
+  border-top: $opacity-border;
+  padding: 17px 0 9px 15px;
+}
+
 .copyrights__list {
   @include list-reset;
   min-width: 112px;
@@ -19,20 +24,31 @@
 .copyrights__info,
 .copyrights__link {
   @include font-supermin;
-  padding: 14px 0;
+  // padding: 14px 0;
   color: $bg-black;
   text-transform: uppercase;
   opacity: 0.5;
 }
 
-.copyrights {
-  border-top: $opacity-border;
-  padding: 21px 25px 24px;
+.copyrights__info--SD {
+  margin-left: 63px;
+}
+
+.copyrights__item--two {
+  margin-left: -16%;
 }
 
 @media (max-width: $tablet-width) {
+  .copyrights {
+    padding: 22px 26px 20px 25px;
+  }
+
   .copyrights__item--right {
     display: none;
+  }
+
+  .copyrights__item--two {
+    margin-left: 0;
   }
 }
 

@@ -1,5 +1,5 @@
 .attribute {
-  padding: 110px 0 25px;
+  padding: 111px 0 25px;
 }
 
 .attribute__list {
@@ -67,38 +67,68 @@
 
 @media (max-width: $tablet-width) {
   .attribute {
-    padding: 73px 0 25px;
+    padding: 35px 0 25px;
   }
 
   .attribute__list {
     width: 100%;
-    padding: 0 25px;
+    padding: 18px 25px 0;
     margin-bottom: 0;
   }
 
   .attribute__item {
-    width: 48%;
+    border-left: $bg-blue 2px solid;
+    width: calc(48% - 1px);
     min-height: 232px;
-    padding: 10px 18px 10px 22px;
+    padding: 23px 28px 25px 25px;
+  }
+
+  .attribute__item svg {
+    margin-bottom: 6px;
+    height: 37px;
+    width: 31px;
   }
 
   .attribute__title {
+    margin-top: 0;
     margin-bottom: 4px;
   }
 
   .attribute__text {
-    margin-top: 4px;
+    line-height: 21.7px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+  }
+
+  .attribute__item--provider svg {
+    margin-bottom: 10px;
+    height: 32px;
+    width: 32px;
+  }
+
+  .attribute__item--detective {
+    padding-right: 18px;
+  }
+
+  .attribute__item--detective svg {
+    width: 31px;
+    height: 34px;
+    margin-bottom: 7px;
+  }
+
+  .attribute__item--detective .attribute__text {
+    padding-top: 9px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .attribute {
-    padding-top: 37px 0 0;
+    padding: 0 0 17px;
   }
 
   .attribute__list {
     width: 100%;
-    padding: 38px 14px 22px;
+    padding: 37px 14px 22px;
     margin-bottom: 0;
   }
 
@@ -111,10 +141,38 @@
     margin-bottom: 20px;
     min-height: auto;
     width: 100%;
-    padding: 10px 14px 10px 24px;
+    padding: 23px 20px 28px 24px;
+  }
+
+  .attribute__item svg {
+    margin-bottom: 8px;
   }
 
   .attribute__title {
     @include font-condensed-20;
+  }
+
+  .attribute__text {
+    line-height: 1.36em;
+  }
+
+  .attribute__item--provider {
+    padding: 23px 15px 28px 24px;
+  }
+
+  .attribute__item--provider svg {
+    margin-bottom: 13px;
+  }
+
+  .attribute__item--detective svg {
+    margin-bottom: 7px;
+  }
+
+  .attribute__item--detective .attribute__title {
+    line-height: 28px;
+  }
+
+  .attribute__item--cost svg {
+    margin-bottom: 5px;
   }
 }

@@ -18,7 +18,7 @@
 .page-main__title {
   @include font-condensed-max;
   text-transform: uppercase;
-  margin-bottom: 27px;
+  margin: 82px -3px 26px;
   max-width: 800px;
   z-index: 2;
 }
@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  padding: 367px 0 185px;
+  padding: 367px 0 182px;
   position: relative;
 }
 
@@ -45,7 +45,7 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
-  top: 390px;
+  top: 391px;
   right: -75px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -74,7 +74,7 @@
   height: 2px;
   position: absolute;
   background-color: $white;
-  top: 15px;
+  top: 17px;
   left: 0;
 }
 
@@ -114,9 +114,8 @@
 
   .page-main__title {
     @include font-condensed-medium-big;
-    margin-bottom: 30px;
     max-width: 470px;
-    margin-top: 40px;
+    margin-top: 62px;
     margin-bottom: 28px;
   }
 
@@ -129,10 +128,6 @@
     width: 67%;
   }
 
-  .page-main__screen {
-    padding-bottom: 18px;
-  }
-
   .page-main__scroll {
     display: none;
   }
@@ -140,12 +135,12 @@
   .page-main__text::before {
     width: 33px;
     height: 2px;
-    top: 15px;
+    top: 16px;
     left: 0;
   }
 
   .page-main__color {
-    padding: 145px 8.4% 90px;
+    padding: 145px 8.4% 110px;
   }
 
   .page-main__color::before {
@@ -171,7 +166,7 @@
     line-height: 1.4;
     width: 379px;
     margin-left: 8.5%;
-    padding: 14px 28px;
+    padding: 15.5px;
   }
 }
 
@@ -181,7 +176,7 @@
   }
 
   .page-main__color {
-    padding: 267px 5% 0;
+    padding: 267px 5% 70px;
   }
 
   .page-main__color::before {
@@ -201,6 +196,7 @@
   .page-main__title {
     @include font-condensed-bold;
     padding: 0;
+    margin-top: 40px;
     margin-bottom: 27px;
   }
 
@@ -239,15 +235,14 @@
   }
 
   .page-main__btn {
-    margin: 0 0 70px;
-    padding: 14px 11px 11px;
+    width: auto;
+    margin: 0;
+    padding: 15px 0 16px;
   }
 
   .page-main__advice-mobile {
     @include font-condensed-basic;
     display: inline-block;
-    font-size: 17px;
-    text-transform: uppercase;
     text-align: center;
     background-color: $bg-blue;
     border-color: $bg-blue;
