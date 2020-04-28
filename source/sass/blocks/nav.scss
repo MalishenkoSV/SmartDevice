@@ -15,6 +15,16 @@
   display: inline-block;
 }
 
+.nav__link:focus,
+.nav__link:hover {
+  outline: none;
+  box-shadow: 0 2px 0 0 $white;
+}
+
+.btn:active {
+  opacity: 0.4;
+}
+
 .nav__link::before {
   content: "";
   position: absolute;
@@ -45,8 +55,6 @@
 
 .nav__item--mail {
   padding-top: 12px;
-  // margin-left: 20px;
-  // padding-left: 15px;
 }
 
 .nav__item--btn {
@@ -107,6 +115,15 @@
   margin-right: 37px;
   display: none;
 }
+.nav__burger:hover,
+.nav__burger:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px $white;
+}
+
+.nav__burger:active {
+  opacity: 0.4;
+}
 
 @media (max-width: $tablet-width) {
   .nav {
@@ -125,6 +142,11 @@
 
   .nav__link {
     font-size: 0;
+  }
+
+  .nav__link:focus,
+  .nav__link:hover {
+    box-shadow: 0 0 0 2px $white;
   }
 
   .nav__burger {
